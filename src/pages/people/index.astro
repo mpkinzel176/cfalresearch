@@ -1,0 +1,82 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PersonCard from '@/components/PersonCard.astro';
+import AlumniCard from '@/components/AlumniCard.astro';
+import {
+  FACULTY, POSTDOCS, GRADUATE_STUDENTS, UNDERGRADUATE_STUDENTS, ALUMNI,
+} from '@/lib/data';
+
+const alumniByDegree = {
+  'Ph.D.': ALUMNI.filter((p) => p.degree_level === 'Ph.D.'),
+  'M.S.': ALUMNI.filter((p) => p.degree_level === 'M.S.'),
+  'B.S. Honors': ALUMNI.filter((p) => p.degree_level === 'B.S. Honors'),
+  'Postdoc': ALUMNI.filter((p) => p.degree_level === 'Postdoc'),
+};
+---
+
+<BaseLayout title="People" description="Faculty, postdoctoral scholars, graduate students, undergraduate researchers, and alumni of CFAL.">
+  <section class="container-lab py-16">
+    <p class="font-mono text-xs uppercase tracking-widest text-(--color-blue-600)">People</p>
+    <h1 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Who works here</h1>
+
+    <div class="mt-8 flex gap-2 border-b border-(--color-line)">
+      <button type="button" data-tab-btn="current" class="tab-btn border-b-2 border-(--color-navy-950) px-4 py-2 text-sm font-semibold">Current</button>
+      <button type="button" data-tab-btn="alumni" class="tab-btn border-b-2 border-transparent px-4 py-2 text-sm font-semibold text-(--color-slate-600)">Alumni</button>
+    </div>
+
+    <div data-tab-panel="current" class="mt-10 space-y-12">
+      <div>
+        <h2 class="font-display text-xl font-semibold mb-4">Faculty</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {FACULTY.map((p) => <PersonCard person={p} featured />)}
+        </div>
+      </div>
+      <div>
+        <h2 class="font-display text-xl font-semibold mb-4">Postdoctoral Scholars</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {POSTDOCS.map((p) => <PersonCard person={p} />)}
+        </div>
+      </div>
+      <div>
+        <h2 class="font-display text-xl font-semibold mb-4">Graduate Students</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {GRADUATE_STUDENTS.map((p) => <PersonCard person={p} />)}
+        </div>
+      </div>
+      <div>
+        <h2 class="font-display text-xl font-semibold mb-4">Undergraduate Researchers</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {UNDERGRADUATE_STUDENTS.map((p) => <PersonCard person={p} />)}
+        </div>
+      </div>
+    </div>
+
+    <div data-tab-panel="alumni" class="mt-10 hidden space-y-12">
+      {Object.entries(alumniByDegree).map(([label, people]) => people.length > 0 && (
+        <div>
+          <h2 class="font-display text-xl font-semibold mb-4">{label === 'Postdoc' ? 'Former Postdoctoral Scholars' : `${label} Alumni`}</h2>
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {people.map((p) => <AlumniCard person={p} />)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  const buttons = document.querySelectorAll('[data-tab-btn]');
+  const panels = document.querySelectorAll('[data-tab-panel]');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tabBtn;
+      buttons.forEach((b) => {
+        const active = b.dataset.tabBtn === target;
+        b.classList.toggle('border-(--color-navy-950)', active);
+        b.classList.toggle('border-transparent', !active);
+        b.classList.toggle('text-(--color-slate-600)', !active);
+      });
+      panels.forEach((p) => p.classList.toggle('hidden', p.dataset.tabPanel !== target));
+    });
+  });
+</script>

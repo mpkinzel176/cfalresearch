@@ -1,0 +1,53 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
+import PersonCard from '@/components/PersonCard.astro';
+import PublicationItem from '@/components/PublicationItem.astro';
+import {
+  RESEARCH_AREAS, projectsForResearchArea, peopleForResearchArea, publicationsForResearchArea,
+} from '@/lib/data';
+
+export function getStaticPaths() {
+  return RESEARCH_AREAS.map((area) => ({ params: { id: area.id }, props: { area } }));
+}
+
+const { area } = Astro.props;
+const projects = projectsForResearchArea(area.id);
+const people = peopleForResearchArea(area.id);
+const pubs = publicationsForResearchArea(area.id).slice(0, 8);
+---
+
+<BaseLayout title={area.title} description={area.description}>
+  <section class="container-lab py-16">
+    <a href="/research" class="text-sm font-semibold text-(--color-blue-600) hover:underline">← All research areas</a>
+    <h1 class="mt-4 font-display text-3xl font-semibold sm:text-4xl">{area.title}</h1>
+    <p class="mt-4 max-w-3xl text-(--color-slate-600) leading-relaxed">{area.description}</p>
+
+    {projects.length > 0 && (
+      <div class="mt-12">
+        <h2 class="font-display text-xl font-semibold mb-4">Related Projects</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((p) => <ProjectCard project={p} />)}
+        </div>
+      </div>
+    )}
+
+    {people.length > 0 && (
+      <div class="mt-12">
+        <h2 class="font-display text-xl font-semibold mb-4">Students &amp; Researchers</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {people.map((p) => <PersonCard person={p} />)}
+        </div>
+      </div>
+    )}
+
+    {pubs.length > 0 && (
+      <div class="mt-12">
+        <h2 class="font-display text-xl font-semibold mb-4">Selected Publications</h2>
+        <div class="card divide-y divide-(--color-line) px-5">
+          {pubs.map((pub) => <PublicationItem pub={pub} showBibtex={false} />)}
+        </div>
+      </div>
+    )}
+  </section>
+</BaseLayout>

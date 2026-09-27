@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+scripts/cv_extract.json
+.DS_Store
+Thumbs.db
+*.log
+.env

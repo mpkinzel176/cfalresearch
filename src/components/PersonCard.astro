@@ -1,0 +1,50 @@
+---
+import type { Person } from '@/lib/data';
+
+interface Props {
+  person: Person;
+  featured?: boolean;
+}
+
+const { person, featured = false } = Astro.props;
+const initials = person.name
+  .split(' ')
+  .map((p) => p[0])
+  .filter(Boolean)
+  .slice(0, 2)
+  .join('')
+  .toUpperCase();
+---
+
+<article
+  class:list={[
+    'card flex gap-4 p-5',
+    featured && 'ring-1 ring-(--color-gold-500)/60',
+  ]}
+>
+  {person.photo ? (
+    <img src={person.photo} alt={person.name} class="h-16 w-16 shrink-0 rounded object-cover" loading="lazy" />
+  ) : (
+    <div class="grid h-16 w-16 shrink-0 place-items-center rounded bg-(--color-navy-950) font-display text-lg font-semibold text-(--color-gold-500)">
+      {initials}
+    </div>
+  )}
+  <div class="min-w-0">
+    {person.role && <p class="text-[0.65rem] font-semibold uppercase tracking-wide text-(--color-blue-600)">{person.role}</p>}
+    <h3 class="font-display text-lg font-semibold leading-tight">
+      <a href={`/people/${person.id}`} class="hover:text-(--color-blue-600)">{person.name}</a>
+    </h3>
+    {person.research_area && <p class="mt-1 text-sm text-(--color-slate-600)">{person.research_area}</p>}
+    <div class="mt-2 flex flex-wrap items-center gap-3 text-xs">
+      {person.linkedin && (
+        <a href={person.linkedin} target="_blank" rel="noopener" class="font-medium text-(--color-blue-600) hover:underline">LinkedIn</a>
+      )}
+      {person.personal_website && (
+        <a href={person.personal_website} target="_blank" rel="noopener" class="font-medium text-(--color-blue-600) hover:underline">Website</a>
+      )}
+      {person.google_scholar && (
+        <a href={person.google_scholar} target="_blank" rel="noopener" class="font-medium text-(--color-blue-600) hover:underline">Scholar</a>
+      )}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,89 @@
+---
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/research', label: 'Research' },
+  { href: '/people', label: 'People' },
+  { href: '/publications', label: 'Publications' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/theses', label: 'Theses & Dissertations' },
+  { href: '/news', label: 'News' },
+  { href: '/opportunities', label: 'Opportunities' },
+  { href: '/about', label: 'About' },
+];
+
+const path = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 border-b border-(--color-line) bg-(--color-navy-950) text-white">
+  <div class="container-lab flex items-center justify-between gap-6 py-3">
+    <a href="/" class="flex items-center gap-3 shrink-0" aria-label="CFAL home">
+      <img src="/cfal-mark.png" alt="" class="h-10 w-auto" />
+      <span class="flex flex-col leading-tight">
+        <span class="font-display text-lg font-semibold tracking-wide text-(--color-gold-500)">CFAL</span>
+        <span class="text-[0.6rem] uppercase tracking-wide text-slate-300">Computational Fluids &amp; Aerodynamics Lab</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-1 text-sm font-medium" aria-label="Main navigation">
+      {nav.map((item) => (
+        <a
+          href={item.href}
+          class:list={[
+            'px-3 py-2 rounded transition-colors hover:bg-(--color-navy-800)',
+            (item.href === '/' ? path === '/' : path.startsWith(item.href)) && 'bg-(--color-navy-800) text-(--color-gold-500)',
+          ]}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        class="grid h-9 w-9 place-items-center rounded border border-white/20 hover:bg-(--color-navy-800)"
+      >
+        <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+        </svg>
+      </button>
+      <button
+        id="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        class="lg:hidden grid h-9 w-9 place-items-center rounded border border-white/20"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-nav" class="lg:hidden hidden border-t border-white/10 px-4 py-2" aria-label="Mobile navigation">
+    {nav.map((item) => (
+      <a href={item.href} class="block py-2 text-sm font-medium">{item.label}</a>
+    ))}
+  </nav>
+</header>
+
+<script is:inline>
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  navToggle?.addEventListener('click', () => {
+    const isHidden = mobileNav.classList.toggle('hidden');
+    navToggle.setAttribute('aria-expanded', String(!isHidden));
+  });
+
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle?.addEventListener('click', () => {
+    const root = document.documentElement;
+    const current = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('cfal-theme', next);
+  });
+</script>

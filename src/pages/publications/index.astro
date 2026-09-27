@@ -1,0 +1,80 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PublicationItem from '@/components/PublicationItem.astro';
+import { PUBLICATIONS, RESEARCH_AREAS } from '@/lib/data';
+
+const years = [...new Set(PUBLICATIONS.map((p) => p.year))].sort((a, b) => b - a);
+const journals = [...new Set(PUBLICATIONS.map((p) => p.journal).filter(Boolean))].sort();
+---
+
+<BaseLayout title="Publications" description="Chronological list of CFAL's peer-reviewed journal articles and conference proceedings, sourced from Google Scholar.">
+  <section class="container-lab py-16">
+    <p class="font-mono text-xs uppercase tracking-widest text-(--color-blue-600)">Publications</p>
+    <h1 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Research Record</h1>
+    <p class="mt-3 max-w-2xl text-(--color-slate-600)">
+      {PUBLICATIONS.length} publications, refreshed weekly from
+      <a href="https://scholar.google.com/citations?user=LI9BgQkAAAAJ&hl=en" target="_blank" rel="noopener" class="font-semibold text-(--color-blue-600) hover:underline">Dr. Kinzel's Google Scholar profile</a>.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-4 border-y border-(--color-line) py-4">
+      <label class="text-sm">
+        <span class="mr-2 font-semibold">Year</span>
+        <select id="filter-year" class="rounded border border-(--color-line) px-2 py-1">
+          <option value="">All</option>
+          {years.map((y) => <option value={y}>{y}</option>)}
+        </select>
+      </label>
+      <label class="text-sm">
+        <span class="mr-2 font-semibold">Research area</span>
+        <select id="filter-area" class="rounded border border-(--color-line) px-2 py-1">
+          <option value="">All</option>
+          {RESEARCH_AREAS.map((a) => <option value={a.id}>{a.title}</option>)}
+        </select>
+      </label>
+      <label class="text-sm min-w-[14rem] flex-1">
+        <span class="mr-2 font-semibold">Journal / venue</span>
+        <select id="filter-journal" class="w-full rounded border border-(--color-line) px-2 py-1">
+          <option value="">All</option>
+          {journals.map((j) => <option value={j}>{j}</option>)}
+        </select>
+      </label>
+    </div>
+
+    <p id="result-count" class="mt-4 text-xs text-(--color-slate-400)"></p>
+
+    <div id="pub-list" class="card mt-2 divide-y divide-(--color-line) px-5">
+      {PUBLICATIONS.map((pub) => (
+        <div data-year={pub.year} data-journal={pub.journal} data-tags={pub.research_tags.join(',')}>
+          <PublicationItem pub={pub} />
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  const yearSel = document.getElementById('filter-year');
+  const areaSel = document.getElementById('filter-area');
+  const journalSel = document.getElementById('filter-journal');
+  const items = [...document.querySelectorAll('#pub-list > div')];
+  const countEl = document.getElementById('result-count');
+
+  function applyFilters() {
+    const year = yearSel.value;
+    const area = areaSel.value;
+    const journal = journalSel.value;
+    let visible = 0;
+    items.forEach((item) => {
+      const matchesYear = !year || item.dataset.year === year;
+      const matchesArea = !area || item.dataset.tags.split(',').includes(area);
+      const matchesJournal = !journal || item.dataset.journal === journal;
+      const show = matchesYear && matchesArea && matchesJournal;
+      item.classList.toggle('hidden', !show);
+      if (show) visible += 1;
+    });
+    countEl.textContent = `Showing ${visible} of ${items.length} publications`;
+  }
+
+  [yearSel, areaSel, journalSel].forEach((el) => el.addEventListener('change', applyFilters));
+  applyFilters();
+</script>

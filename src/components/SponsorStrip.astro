@@ -1,0 +1,17 @@
+---
+import { SPONSORS } from '@/lib/data';
+---
+
+<div class="flex flex-wrap items-center gap-x-8 gap-y-4">
+  {SPONSORS.map((s) => (
+    s.logo ? (
+      <a href={s.url || undefined} target={s.url ? '_blank' : undefined} rel="noopener" title={s.name}>
+        <img src={s.logo} alt={s.name} class="h-10 w-auto grayscale opacity-80 transition hover:grayscale-0 hover:opacity-100" />
+      </a>
+    ) : (
+      <span class="rounded border border-(--color-line) px-3 py-2 text-xs font-semibold uppercase tracking-wide text-(--color-slate-600)">
+        {s.name}
+      </span>
+    )
+  ))}
+</div>

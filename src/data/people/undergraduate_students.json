@@ -1,0 +1,54 @@
+[
+  {
+    "id": "dareen-nguyen",
+    "name": "Dareen Nguyen",
+    "role": "Undergraduate Researcher",
+    "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
+    "research_area": "RCS thruster damage to satellites",
+    "years": "2024–present",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "research_tags": ["space-planetary-aerodynamics"]
+  },
+  {
+    "id": "spencer-rouland",
+    "name": "Spencer Rouland",
+    "role": "Undergraduate Researcher",
+    "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
+    "research_area": "RCS thruster damage to satellites and reentry vehicle design",
+    "years": "2024–present",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "research_tags": ["space-planetary-aerodynamics", "hypersonics-reentry"]
+  },
+  {
+    "id": "colby-bolduc",
+    "name": "Colby Bolduc",
+    "role": "Undergraduate Researcher",
+    "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
+    "research_area": "RCS thruster damage to satellites and reentry vehicle design",
+    "years": "2024–present",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "research_tags": ["space-planetary-aerodynamics", "hypersonics-reentry"]
+  },
+  {
+    "id": "michael-culbertson",
+    "name": "Michael Culbertson",
+    "role": "Undergraduate Researcher",
+    "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
+    "research_area": "Supercavitation and autonomous vehicle design and build",
+    "years": "2024–present",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "research_tags": ["multiphase-extreme-environment-flows"]
+  }
+]

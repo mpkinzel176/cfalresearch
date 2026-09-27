@@ -1,0 +1,31 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
+import { PROJECTS } from '@/lib/data';
+
+const active = PROJECTS.filter((p) => p.status === 'active');
+const completed = PROJECTS.filter((p) => p.status === 'completed');
+---
+
+<BaseLayout title="Projects" description="Active and completed sponsored research projects at CFAL.">
+  <section class="container-lab py-16">
+    <p class="font-mono text-xs uppercase tracking-widest text-(--color-blue-600)">Projects</p>
+    <h1 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Sponsored Research Projects</h1>
+
+    <div class="mt-10">
+      <h2 class="font-display text-xl font-semibold mb-4">Active</h2>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {active.map((p) => <ProjectCard project={p} />)}
+      </div>
+    </div>
+
+    {completed.length > 0 && (
+      <div class="mt-12">
+        <h2 class="font-display text-xl font-semibold mb-4">Completed</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {completed.map((p) => <ProjectCard project={p} />)}
+        </div>
+      </div>
+    )}
+  </section>
+</BaseLayout>

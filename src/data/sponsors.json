@@ -1,0 +1,14 @@
+[
+  { "id": "nasa", "name": "NASA", "logo": "", "url": "https://www.nasa.gov" },
+  { "id": "nsf", "name": "National Science Foundation", "logo": "", "url": "https://www.nsf.gov" },
+  { "id": "darpa", "name": "DARPA", "logo": "", "url": "https://www.darpa.mil" },
+  { "id": "afrl", "name": "Air Force Research Laboratory", "logo": "", "url": "https://www.afrl.af.mil" },
+  { "id": "afosr", "name": "Air Force Office of Scientific Research", "logo": "", "url": "https://www.afrl.af.mil/AFOSR/" },
+  { "id": "usaf", "name": "U.S. Air Force", "logo": "", "url": "https://www.af.mil" },
+  { "id": "ussf", "name": "U.S. Space Force", "logo": "", "url": "https://www.spaceforce.mil" },
+  { "id": "onr", "name": "Office of Naval Research", "logo": "", "url": "https://www.onr.navy.mil" },
+  { "id": "navy", "name": "U.S. Navy", "logo": "", "url": "https://www.navy.mil" },
+  { "id": "doe", "name": "Department of Energy", "logo": "", "url": "https://www.energy.gov" },
+  { "id": "jhuapl", "name": "Johns Hopkins Applied Physics Laboratory", "logo": "", "url": "https://www.jhuapl.edu" },
+  { "id": "nrtc", "name": "National Rotorcraft Technology Center", "logo": "", "url": "" }
+]

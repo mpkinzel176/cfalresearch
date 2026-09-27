@@ -1,0 +1,53 @@
+---
+import type { Person } from '@/lib/data';
+
+interface Props { person: Person }
+const { person } = Astro.props;
+---
+
+<article class="card p-5">
+  <div class="flex items-start justify-between gap-3">
+    <div>
+      <h3 class="font-display text-lg font-semibold leading-tight">{person.name}</h3>
+      <p class="text-sm text-(--color-slate-600)">
+        {person.degree} — {person.university}
+        {person.years && <span class="text-(--color-slate-400)"> · {person.years}</span>}
+      </p>
+    </div>
+    <span class="shrink-0 rounded bg-(--color-navy-950) px-2 py-1 text-[0.65rem] font-semibold uppercase tracking-wide text-(--color-gold-500)">
+      {person.degree_level}
+    </span>
+  </div>
+
+  {person.thesis_title && (
+    <p class="mt-3 text-sm italic text-(--color-navy-950)">"{person.thesis_title}"</p>
+  )}
+
+  {(person.thesis_url || person.linkedin) && (
+    <div class="mt-3 flex flex-wrap gap-2">
+      {person.thesis_url && (
+        <a href={person.thesis_url} target="_blank" rel="noopener"
+           class="rounded border border-(--color-blue-600) px-3 py-1.5 text-xs font-semibold text-(--color-blue-600) hover:bg-(--color-blue-600) hover:text-white transition-colors">
+          View {person.degree_level === 'Ph.D.' ? 'Dissertation' : 'Thesis'} ↗
+        </a>
+      )}
+      {person.linkedin && (
+        <a href={person.linkedin} target="_blank" rel="noopener"
+           class="rounded border border-(--color-navy-950) px-3 py-1.5 text-xs font-semibold hover:bg-(--color-navy-950) hover:text-white transition-colors">
+          LinkedIn ↗
+        </a>
+      )}
+    </div>
+  )}
+
+  {(person.current_position || person.current_employer) && (
+    <p class="mt-3 text-sm">
+      <span class="font-semibold text-(--color-slate-600)">Now:</span>{' '}
+      {person.current_position && <span>{person.current_position}, </span>}
+      <span>{person.current_employer}</span>
+    </p>
+  )}
+
+  {person.note && <p class="mt-2 text-xs text-(--color-slate-400)">{person.note}</p>}
+  {person.thesis_title_note && <p class="mt-2 text-xs text-amber-700">⚠ {person.thesis_title_note}</p>}
+</article>

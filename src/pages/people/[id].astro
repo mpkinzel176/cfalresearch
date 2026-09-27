@@ -1,0 +1,99 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
+import PublicationItem from '@/components/PublicationItem.astro';
+import {
+  ALL_CURRENT_PEOPLE, ALUMNI, publicationsForPerson, projectsForPerson, researchAreaById,
+} from '@/lib/data';
+
+export function getStaticPaths() {
+  return [...ALL_CURRENT_PEOPLE, ...ALUMNI].map((person) => ({ params: { id: person.id }, props: { person } }));
+}
+
+const { person } = Astro.props;
+const pubs = publicationsForPerson(person);
+const projects = projectsForPerson(person.id);
+const tags = (person.research_tags as string[] | undefined) ?? [];
+const areas = tags.map((t) => researchAreaById(t)).filter(Boolean);
+const isAlumni = ALUMNI.some((a) => a.id === person.id);
+---
+
+<BaseLayout title={person.name}>
+  <section class="container-lab py-16">
+    <a href="/people" class="text-sm font-semibold text-(--color-blue-600) hover:underline">← All people</a>
+
+    <div class="mt-6 flex flex-col gap-6 sm:flex-row sm:items-start">
+      {person.photo ? (
+        <img src={person.photo} alt={person.name} class="h-32 w-32 rounded object-cover" />
+      ) : (
+        <div class="grid h-32 w-32 place-items-center rounded bg-(--color-navy-950) font-display text-3xl font-semibold text-(--color-gold-500)">
+          {person.name.split(' ').map((p: string) => p[0]).slice(0, 2).join('')}
+        </div>
+      )}
+      <div>
+        {person.role && <p class="text-sm font-semibold uppercase tracking-wide text-(--color-blue-600)">{person.role}</p>}
+        <h1 class="font-display text-3xl font-semibold sm:text-4xl">{person.name}</h1>
+        {person.degree && <p class="mt-1 text-(--color-slate-600)">{person.degree}{person.university ? ` — ${person.university}` : ''}</p>}
+        <div class="mt-3 flex flex-wrap gap-3 text-sm">
+          {person.linkedin && <a href={person.linkedin} target="_blank" rel="noopener" class="font-semibold text-(--color-blue-600) hover:underline">LinkedIn ↗</a>}
+          {person.personal_website && <a href={person.personal_website} target="_blank" rel="noopener" class="font-semibold text-(--color-blue-600) hover:underline">Website ↗</a>}
+          {person.google_scholar && <a href={person.google_scholar} target="_blank" rel="noopener" class="font-semibold text-(--color-blue-600) hover:underline">Google Scholar ↗</a>}
+        </div>
+      </div>
+    </div>
+
+    {person.bio && <p class="mt-8 max-w-3xl leading-relaxed text-(--color-slate-600)">{person.bio}</p>}
+    {person.research_area && <p class="mt-4 max-w-3xl leading-relaxed">{person.research_area}</p>}
+
+    {person.thesis_title && (
+      <div class="mt-8 card p-5 max-w-2xl">
+        <p class="text-xs font-semibold uppercase tracking-wide text-(--color-slate-600)">{isAlumni ? 'Dissertation / Thesis' : 'Current Research'}</p>
+        <p class="mt-2 italic">"{person.thesis_title}"</p>
+        {person.thesis_url && (
+          <a href={person.thesis_url} target="_blank" rel="noopener" class="mt-3 inline-block text-sm font-semibold text-(--color-blue-600) hover:underline">
+            View document ↗
+          </a>
+        )}
+      </div>
+    )}
+
+    {(person.current_position || person.current_employer) && (
+      <p class="mt-6 text-sm">
+        <span class="font-semibold text-(--color-slate-600)">Now:</span>{' '}
+        {person.current_position && <span>{person.current_position}, </span>}
+        <span>{person.current_employer}</span>
+      </p>
+    )}
+
+    {areas.length > 0 && (
+      <div class="mt-10">
+        <h2 class="font-display text-xl font-semibold mb-4">Research Areas</h2>
+        <div class="flex flex-wrap gap-2">
+          {areas.map((a) => a && (
+            <a href={`/research/${a.id}`} class="rounded-full border border-(--color-blue-600) px-3 py-1 text-xs font-semibold text-(--color-blue-600) hover:bg-(--color-blue-600) hover:text-white">
+              {a.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {projects.length > 0 && (
+      <div class="mt-10">
+        <h2 class="font-display text-xl font-semibold mb-4">Projects</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((p) => <ProjectCard project={p} />)}
+        </div>
+      </div>
+    )}
+
+    {pubs.length > 0 && (
+      <div class="mt-10">
+        <h2 class="font-display text-xl font-semibold mb-4">Publications</h2>
+        <div class="card divide-y divide-(--color-line) px-5">
+          {pubs.map((pub) => <PublicationItem pub={pub} showBibtex={false} />)}
+        </div>
+      </div>
+    )}
+  </section>
+</BaseLayout>

@@ -1,0 +1,28 @@
+name: Refresh Google Scholar publications
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 9 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download current publications
+        shell: pwsh
+        run: ./scripts/Fetch-GoogleScholarPublications.ps1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild publications.json (authors, DOIs, research tags)
+        run: python scripts/build_publications.py
+      - name: Commit refreshed publications
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: refresh Google Scholar publications'
+          file_pattern: src/data/publications-raw.json src/data/publications.json

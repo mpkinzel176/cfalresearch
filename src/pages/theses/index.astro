@@ -1,0 +1,93 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { allTheses, RESEARCH_AREAS } from '@/lib/data';
+
+const theses = allTheses();
+const years = [...new Set(theses.map((t) => t.year))].filter(Boolean).sort((a, b) => b - a);
+const degreeLevels = [...new Set(theses.map((t) => t.degree_level))].filter(Boolean);
+---
+
+<BaseLayout title="Theses &amp; Dissertations" description="A chronological archive of Ph.D. dissertations, M.S. theses, and undergraduate honors theses produced in CFAL.">
+  <section class="container-lab py-16">
+    <p class="font-mono text-xs uppercase tracking-widest text-(--color-blue-600)">Archive</p>
+    <h1 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Theses &amp; Dissertations</h1>
+    <p class="mt-3 max-w-2xl text-(--color-slate-600)">{theses.length} dissertations and theses produced by CFAL students, in reverse chronological order.</p>
+
+    <div class="mt-8 flex flex-wrap gap-4 border-y border-(--color-line) py-4">
+      <label class="text-sm">
+        <span class="mr-2 font-semibold">Degree</span>
+        <select id="filter-degree" class="rounded border border-(--color-line) px-2 py-1">
+          <option value="">All</option>
+          {degreeLevels.map((d) => <option value={d}>{d}</option>)}
+        </select>
+      </label>
+      <label class="text-sm">
+        <span class="mr-2 font-semibold">Year</span>
+        <select id="filter-year" class="rounded border border-(--color-line) px-2 py-1">
+          <option value="">All</option>
+          {years.map((y) => <option value={y}>{y}</option>)}
+        </select>
+      </label>
+      <label class="text-sm">
+        <span class="mr-2 font-semibold">Research area</span>
+        <select id="filter-area" class="rounded border border-(--color-line) px-2 py-1">
+          <option value="">All</option>
+          {RESEARCH_AREAS.map((a) => <option value={a.id}>{a.title}</option>)}
+        </select>
+      </label>
+    </div>
+
+    <p id="result-count" class="mt-4 text-xs text-(--color-slate-400)"></p>
+
+    <div id="thesis-list" class="mt-2 space-y-4">
+      {theses.map((t) => (
+        <article class="card p-5" data-degree={t.degree_level} data-year={t.year} data-tags={t.research_tags.join(',')}>
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="font-display text-lg font-semibold">
+              <a href={`/people/${t.personId}`} class="hover:text-(--color-blue-600)">{t.name}</a>
+            </h3>
+            <span class="font-mono text-sm text-(--color-blue-600)">{t.year || '—'}</span>
+          </div>
+          <p class="text-sm text-(--color-slate-600)">{t.degree_level}, {t.university}</p>
+          <p class="mt-2 italic">"{t.title}"</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            {t.url && (
+              <a href={t.url} target="_blank" rel="noopener" class="rounded border border-(--color-blue-600) px-3 py-1.5 text-xs font-semibold text-(--color-blue-600) hover:bg-(--color-blue-600) hover:text-white">
+                View {t.degree_level === 'Ph.D.' ? 'Dissertation' : 'Thesis'} ↗
+              </a>
+            )}
+            {t.linkedin && (
+              <a href={t.linkedin} target="_blank" rel="noopener" class="rounded border border-(--color-navy-950) px-3 py-1.5 text-xs font-semibold hover:bg-(--color-navy-950) hover:text-white">
+                LinkedIn ↗
+              </a>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  const degreeSel = document.getElementById('filter-degree');
+  const yearSel = document.getElementById('filter-year');
+  const areaSel = document.getElementById('filter-area');
+  const items = [...document.querySelectorAll('#thesis-list > article')];
+  const countEl = document.getElementById('result-count');
+
+  function applyFilters() {
+    let visible = 0;
+    items.forEach((item) => {
+      const matchesDegree = !degreeSel.value || item.dataset.degree === degreeSel.value;
+      const matchesYear = !yearSel.value || item.dataset.year === yearSel.value;
+      const matchesArea = !areaSel.value || item.dataset.tags.split(',').includes(areaSel.value);
+      const show = matchesDegree && matchesYear && matchesArea;
+      item.classList.toggle('hidden', !show);
+      if (show) visible += 1;
+    });
+    countEl.textContent = `Showing ${visible} of ${items.length}`;
+  }
+
+  [degreeSel, yearSel, areaSel].forEach((el) => el.addEventListener('change', applyFilters));
+  applyFilters();
+</script>

@@ -1,0 +1,112 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ResearchCard from '@/components/ResearchCard.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
+import PersonCard from '@/components/PersonCard.astro';
+import PublicationItem from '@/components/PublicationItem.astro';
+import SponsorStrip from '@/components/SponsorStrip.astro';
+import {
+  RESEARCH_AREAS, PROJECTS, FACULTY, POSTDOCS, GRADUATE_STUDENTS, PUBLICATIONS,
+} from '@/lib/data';
+import { getCollection } from 'astro:content';
+
+const featuredProjects = PROJECTS.filter((p) => p.status === 'active').slice(0, 6);
+const featuredPeople = [...FACULTY, ...GRADUATE_STUDENTS.slice(0, 5), ...POSTDOCS.slice(0, 2)];
+const recentPubs = PUBLICATIONS.slice(0, 5);
+const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+---
+
+<BaseLayout title="CFAL">
+  <section class="relative overflow-hidden bg-(--color-navy-950) text-white">
+    <video
+      class="absolute inset-0 h-full w-full object-cover opacity-40"
+      src="/dragonfly.mp4" autoplay muted loop playsinline
+    ></video>
+    <div class="absolute inset-0 bg-gradient-to-t from-(--color-navy-950) via-(--color-navy-950)/70 to-(--color-navy-950)/30"></div>
+    <div class="container-lab relative py-20 sm:py-28">
+      <img src="/cfal-mark.png" alt="CFAL logo" class="h-16 w-auto mb-6" />
+      <p class="font-mono text-xs uppercase tracking-widest text-(--color-gold-500)">
+        Embry-Riddle Aeronautical University · Department of Aerospace Engineering
+      </p>
+      <h1 class="mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight sm:text-6xl">
+        Computational Fluids and Aerodynamics Laboratory
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg text-slate-200">
+        We develop computational and experimental tools for complex aerospace and multiphysics flow problems, in environments where conventional aerodynamic models become difficult to apply.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/research" class="rounded bg-(--color-gold-500) px-5 py-2.5 text-sm font-semibold text-(--color-navy-950) hover:bg-white transition-colors">Research</a>
+        <a href="/people" class="rounded border border-white/40 px-5 py-2.5 text-sm font-semibold hover:bg-white/10 transition-colors">People</a>
+        <a href="/publications" class="rounded border border-white/40 px-5 py-2.5 text-sm font-semibold hover:bg-white/10 transition-colors">Publications</a>
+        <a href="/opportunities" class="rounded border border-(--color-gold-500) px-5 py-2.5 text-sm font-semibold text-(--color-gold-500) hover:bg-(--color-gold-500) hover:text-(--color-navy-950) transition-colors">Join the Lab</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-lab py-16">
+    <div class="flex items-end justify-between gap-4 mb-8">
+      <h2 class="font-display text-2xl font-semibold sm:text-3xl">Research Areas</h2>
+      <a href="/research" class="text-sm font-semibold text-(--color-blue-600) hover:underline">All research →</a>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {RESEARCH_AREAS.map((area) => <ResearchCard area={area} />)}
+    </div>
+  </section>
+
+  <section class="bg-(--color-paper) py-16">
+    <div class="container-lab">
+      <div class="flex items-end justify-between gap-4 mb-8">
+        <h2 class="font-display text-2xl font-semibold sm:text-3xl">Featured Projects</h2>
+        <a href="/projects" class="text-sm font-semibold text-(--color-blue-600) hover:underline">All projects →</a>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {featuredProjects.map((p) => <ProjectCard project={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="container-lab py-16">
+    <div class="flex items-end justify-between gap-4 mb-8">
+      <h2 class="font-display text-2xl font-semibold sm:text-3xl">People</h2>
+      <a href="/people" class="text-sm font-semibold text-(--color-blue-600) hover:underline">Full roster →</a>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {featuredPeople.map((p) => <PersonCard person={p} featured={p.id === 'michael-kinzel'} />)}
+    </div>
+  </section>
+
+  <section class="bg-(--color-paper) py-16">
+    <div class="container-lab grid gap-10 lg:grid-cols-[2fr_1fr]">
+      <div>
+        <div class="flex items-end justify-between gap-4 mb-6">
+          <h2 class="font-display text-2xl font-semibold sm:text-3xl">Recent Publications</h2>
+          <a href="/publications" class="text-sm font-semibold text-(--color-blue-600) hover:underline">All publications →</a>
+        </div>
+        <div class="card divide-y divide-(--color-line) px-5">
+          {recentPubs.map((pub) => <PublicationItem pub={pub} showBibtex={false} />)}
+        </div>
+      </div>
+      <div>
+        <div class="flex items-end justify-between gap-4 mb-6">
+          <h2 class="font-display text-2xl font-semibold sm:text-3xl">News</h2>
+          <a href="/news" class="text-sm font-semibold text-(--color-blue-600) hover:underline">All news →</a>
+        </div>
+        <div class="space-y-4">
+          {news.map((item) => (
+            <a href={`/news/${item.id}`} class="card block p-4 hover:shadow-md transition-shadow">
+              <p class="text-xs font-mono text-(--color-slate-400)">
+                {item.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </p>
+              <h3 class="mt-1 font-display text-base font-semibold leading-snug">{item.data.headline}</h3>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-lab py-16">
+    <h2 class="font-display text-2xl font-semibold sm:text-3xl mb-8">Sponsors &amp; Collaborators</h2>
+    <SponsorStrip />
+  </section>
+</BaseLayout>

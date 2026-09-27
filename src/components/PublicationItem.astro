@@ -1,0 +1,44 @@
+---
+import type { Publication } from '@/lib/data';
+
+interface Props { pub: Publication; showBibtex?: boolean }
+const { pub, showBibtex = true } = Astro.props;
+
+function bibtex(p: Publication): string {
+  const key = `${(p.authors[0] || 'anon').replace(/\s+/g, '')}${p.year}`;
+  const authors = p.authors.filter((a) => a !== 'et al.').join(' and ');
+  return `@article{${key},
+  title={${p.title}},
+  author={${authors}},
+  journal={${p.journal}},
+  volume={${p.volume}},
+  pages={${p.pages}},
+  year={${p.year}}${p.doi ? `,\n  doi={${p.doi}}` : ''}
+}`;
+}
+---
+
+<article class="grid grid-cols-[3.5rem_1fr] items-start gap-4 border-b border-(--color-line) py-5 last:border-0" data-tags={pub.research_tags.join(',')}>
+  <div class="font-mono text-sm font-semibold text-(--color-blue-600)">{pub.year}</div>
+  <div>
+    <h3 class="text-[0.95rem] font-semibold leading-snug">{pub.title}</h3>
+    <p class="mt-1 text-xs text-(--color-slate-600)">{pub.authors.join(', ')}</p>
+    {pub.journal && <p class="text-xs italic text-(--color-slate-400)">{pub.journal}</p>}
+    <div class="mt-2 flex flex-wrap items-center gap-3 text-xs">
+      {pub.url && (
+        <a href={pub.url} target="_blank" rel="noopener" class="font-semibold text-(--color-blue-600) hover:underline">
+          {pub.doi ? 'View via DOI' : 'View'} ↗
+        </a>
+      )}
+      {showBibtex && (
+        <button
+          type="button"
+          class="copy-bibtex font-semibold text-(--color-slate-600) hover:text-(--color-navy-950)"
+          data-bibtex={bibtex(pub)}
+        >
+          Copy BibTeX
+        </button>
+      )}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "michael-kinzel",
+    "name": "Michael P. Kinzel",
+    "role": "Lab Director / Associate Professor",
+    "degree": "Ph.D., Aerospace Engineering, The Pennsylvania State University",
+    "research_area": "Computational fluid dynamics, multiphase flow, rotorcraft and hypersonic aerodynamics",
+    "years": "2024–present at ERAU",
+    "photo": "https://webforms.erau.edu/common/services/peoplesearch/img/KINZELM.jpg",
+    "linkedin": "",
+    "personal_website": "https://www.erau.edu/faculty/michael-kinzel",
+    "google_scholar": "https://scholar.google.com/citations?user=LI9BgQkAAAAJ&hl=en",
+    "bio": "Dr. Michael P. Kinzel is Interim Associate Dean of Research for the College of Engineering and an Associate Professor of Aerospace Engineering at Embry-Riddle Aeronautical University, and an Adjunct Associate Professor at the University of Central Florida. He is graduate-trained in aerospace engineering at Penn State, with expertise in computational fluid dynamics (CFD), CFD development, and multiphase CFD, originally applied to rotorcraft and high-speed torpedoes. His research has since expanded to CFD-driven design and fluids analysis across rotorcraft, hypersonics, small-scale biological flows, and in-space manufacturing, with an overarching emphasis on marine, air, and space applications.",
+    "titles": [
+      "Interim Associate Dean of Research, College of Engineering, Embry-Riddle Aeronautical University (Aug. 2026–present)",
+      "Associate Professor with tenure, Aerospace Engineering, Embry-Riddle Aeronautical University (Aug. 2024–present)",
+      "Adjunct Associate Professor, Mechanical and Aerospace Engineering, University of Central Florida (Aug. 2024–present)",
+      "Chief Technology Officer / Co-Owner, Advanced CFD Solutions, LLC (Aug. 2013–present)"
+    ],
+    "education": [
+      "Ph.D., Aerospace Engineering, The Pennsylvania State University (2004–2008)",
+      "M.S., Aerospace Engineering, The Pennsylvania State University (2002–2004)",
+      "B.S., Mechanical Engineering, Northern Arizona University (1997–2001)"
+    ],
+    "honors": [
+      "AIAA Associate Fellow, Aug 2025",
+      "NAWCAD Commander's Award (NAVAIR), Dec 2017",
+      "Penn State ARL Spot Award, July 2016"
+    ]
+  }
+]

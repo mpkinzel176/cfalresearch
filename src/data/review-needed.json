@@ -1,0 +1,86 @@
+[
+  {
+    "item": "Aaron Foster",
+    "issue": "Listed in CV's Ph.D. Students table (UCF, Mechanical Engineering, started 2020, thesis 'Evaluation of Transmission Physics of COVID-19 in Classroom Settings') with 'Year Ended: N/A' and present position 'Disney'. Unclear whether he completed the Ph.D. or left the program.",
+    "action_needed": "Confirm degree completion status before adding to Alumni. Not currently included on the site.",
+    "confidence": 0.4
+  },
+  {
+    "item": "Jason Turner — B.S. Honors Thesis (Penn State)",
+    "issue": "A dissertation-search agent found a search snippet confirming a Kinzel-supervised B.S. honors thesis by a 'Turner' exists in Penn State's honors.libraries.psu.edu repository, but could not verify the exact catalog URL or confirm the title matches 'Development Of A Computationally Inexpensive Method Of Simulating Primary Droplet Breakup'.",
+    "action_needed": "Manually locate and confirm the thesis record; thesis_url left blank on the site pending confirmation.",
+    "confidence": 0.5
+  },
+  {
+    "item": "Justin Valenti thesis link (Penn State)",
+    "issue": "The linked PDF (etda.libraries.psu.edu/files/final_submissions/28524) was corroborated by title/degree/advisor match across multiple search results, but the official ETDA catalog page could not be independently fetched to confirm.",
+    "action_needed": "Spot-check the link resolves to the correct document.",
+    "confidence": 0.75
+  },
+  {
+    "item": "Sean McIntyre thesis advisor (Penn State)",
+    "issue": "Title, degree, program, and year match confidently, but the official ETDA committee metadata lists only Robert F. Kunz and Jules W. Lindau as advisors — Michael Kinzel does not appear on the official record.",
+    "action_needed": "Confirm whether Kinzel was an uncredited mentor on this thesis before featuring it as a CFAL dissertation.",
+    "confidence": 0.6
+  },
+  {
+    "item": "Asish Balu thesis link (Penn State)",
+    "issue": "The linked PDF (honors.libraries.psu.edu/files/final_submissions/3191) was corroborated by title match and a snippet naming Kinzel as supervisor, but the catalog page itself could not be independently fetched.",
+    "action_needed": "Spot-check the link resolves to the correct document.",
+    "confidence": 0.7
+  },
+  {
+    "item": "Bryan Castellanos Martine, Noah Ryckebosch",
+    "issue": "Both appear as current graduate students (\"Quantum & space biology\" and \"Uranus probe\" respectively) in the prior website draft (Website/index.html), but neither name appears anywhere in KinzelCV_03092026.docx.",
+    "action_needed": "Confirm these are current lab members and provide their program/year/research details before adding them to graduate_students.json. Not currently included on the site since the CV is the source of truth.",
+    "confidence": 0.3
+  },
+  {
+    "item": "Colby Bolduc — degree level",
+    "issue": "The prior website draft lists Colby Bolduc as an M.S. student (\"reentry vehicle optimization\"). The CV's 'Undergraduate Research Supervised' table lists him as an undergraduate (\"RCS Thruster Damage to Satellites and reentry vehicle design\", 2024–Current).",
+    "action_needed": "Confirm current degree level/program; site currently follows the CV (undergraduate) per the CV-as-source-of-truth instruction.",
+    "confidence": 0.6
+  },
+  {
+    "item": "LinkedIn profiles — all people",
+    "issue": "Per your instruction, LinkedIn identity-matching was skipped entirely for all ~30+ current members and alumni to avoid misattributing a profile to the wrong person.",
+    "action_needed": "Add LinkedIn URLs directly to the relevant person object's \"linkedin\" field in src/data/people/*.json as you confirm them.",
+    "confidence": null
+  },
+  {
+    "item": "Zachary Miles thesis (UCF)",
+    "issue": "No M.S. thesis record for Zachary Miles was found in UCF's STARS repository or ProQuest — may not yet be deposited/indexed.",
+    "action_needed": "thesis_url left blank; add manually once available.",
+    "confidence": 0.3
+  },
+  {
+    "item": "Zachary Miles, Anthony Domier, Juanpablo Delgado — current position",
+    "issue": "CV lists 'present location' simply as the university itself (e.g. 'UCF') without clarifying whether this means continuing as a Ph.D. student, staff, or something else.",
+    "action_needed": "Clarify current position/employer for these three alumni entries.",
+    "confidence": 0.5
+  },
+  {
+    "item": "Sponsor and funder logos",
+    "issue": "No funder/sponsor logo image files were found in the project directory (only ERAU/UCF institutional logos, used for grant letters of support, not funder seals).",
+    "action_needed": "Add logo image files to public/sponsors/ (see README.md) and set the matching \"logo\" path in src/data/sponsors.json. Left blank rather than fetched from the web to avoid using unverified third-party trademarked assets without your review.",
+    "confidence": null
+  },
+  {
+    "item": "Production domain (site URL)",
+    "issue": "astro.config.mjs, public/robots.txt, and OpenGraph tags use a placeholder domain 'https://cfal.erau.edu' since no real deployment URL was available. This has NOT been verified to exist.",
+    "action_needed": "Once you know the real production URL (a custom domain or your *.pages.dev URL), update the `site` field in astro.config.mjs and the Sitemap: line in public/robots.txt.",
+    "confidence": null
+  },
+  {
+    "item": "Lab contact email",
+    "issue": "No email address appears anywhere in the CV. The site currently uses 'cfal@erau.edu', carried over from your prior website draft (Website/index.html) as a placeholder lab alias — it has not been verified to exist or to reach you.",
+    "action_needed": "Confirm this address is live, or replace it in src/components/Footer.astro and src/pages/about/index.astro and src/pages/opportunities/index.astro with your actual contact email.",
+    "confidence": null
+  },
+  {
+    "item": "Photos",
+    "issue": "No student/staff photographs were found in the project directory. Only Dr. Kinzel's ERAU directory photo URL (from Laboratory Name.docx) and the CFAL/ERAU logo files were available.",
+    "action_needed": "Add photo files to public/people/ and set the \"photo\" field for each person in src/data/people/*.json.",
+    "confidence": null
+  }
+]

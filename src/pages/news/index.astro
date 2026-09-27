@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title="News" description="Announcements, awards, publications, graduations, and conference presentations from CFAL.">
+  <section class="container-lab py-16">
+    <p class="font-mono text-xs uppercase tracking-widest text-(--color-blue-600)">News</p>
+    <h1 class="mt-2 font-display text-3xl font-semibold sm:text-4xl">Lab News</h1>
+
+    <div class="mt-10 space-y-5">
+      {news.map((item) => (
+        <a href={`/news/${item.id}`} class="card block p-6 hover:shadow-md transition-shadow">
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="rounded-full bg-(--color-navy-950) px-2.5 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wide text-(--color-gold-500)">
+              {item.data.category}
+            </span>
+            <span class="text-xs font-mono text-(--color-slate-400)">
+              {item.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </span>
+          </div>
+          <h2 class="mt-2 font-display text-xl font-semibold">{item.data.headline}</h2>
+          <p class="mt-2 text-sm text-(--color-slate-600)">{item.data.summary}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

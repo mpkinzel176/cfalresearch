@@ -1,0 +1,51 @@
+[
+  {
+    "id": "rotorcraft-advanced-air-mobility",
+    "title": "Rotorcraft and Advanced Air Mobility",
+    "short_description": "Rotor aerodynamics, ship airwakes, urban operations, vertiports, rotor outwash, and real-time CFD for flight simulation.",
+    "description": "Rotor aerodynamics, ship airwakes, urban operations, vertiports, rotor outwash, and real-time CFD for flight simulation.",
+    "image": ""
+  },
+  {
+    "id": "space-planetary-aerodynamics",
+    "title": "Space and Planetary Aerodynamics",
+    "short_description": "Dragonfly/Titan aerodynamics, low-gravity flows, rotorcraft operations in extraterrestrial atmospheres, landing environments, and very-low-Earth-orbit aerodynamics.",
+    "description": "Dragonfly/Titan aerodynamics, low-gravity flows, rotorcraft operations in extraterrestrial atmospheres, landing environments, and very-low-Earth-orbit aerodynamics.",
+    "image": ""
+  },
+  {
+    "id": "hypersonics-reentry",
+    "title": "Hypersonics and Reentry",
+    "short_description": "High-speed vehicle aerodynamics, lateral and divert jets, thermal protection systems, and CFD validation using advanced diagnostics such as Schlieren imaging.",
+    "description": "High-speed vehicle aerodynamics, lateral and divert jets, thermal protection systems, and CFD validation using advanced diagnostics such as Schlieren imaging.",
+    "image": ""
+  },
+  {
+    "id": "multiphase-extreme-environment-flows",
+    "title": "Multiphase and Extreme-Environment Flows",
+    "short_description": "Rain, droplets, dust, debris, cavitation, icing, saltation, and shock-droplet interactions.",
+    "description": "Rain, droplets, dust, debris, cavitation, icing, saltation, and shock-droplet interactions.",
+    "image": ""
+  },
+  {
+    "id": "atmospheric-environmental-flows",
+    "title": "Atmospheric and Environmental Flows",
+    "short_description": "Atmospheric boundary layers, winds around buildings and terrain, wind-energy applications, and vehicle-environment interaction.",
+    "description": "Atmospheric boundary layers, winds around buildings and terrain, wind-energy applications, and vehicle-environment interaction.",
+    "image": ""
+  },
+  {
+    "id": "real-time-ai-accelerated-modeling",
+    "title": "Real-Time and AI-Accelerated Modeling",
+    "short_description": "GPU-based CFD, lattice-Boltzmann methods, reduced-order models, machine learning, physics-informed models, and digital twins for near-real-time prediction.",
+    "description": "GPU-based CFD, lattice-Boltzmann methods, reduced-order models, machine learning, physics-informed models, and digital twins for near-real-time prediction.",
+    "image": ""
+  },
+  {
+    "id": "multidisciplinary-design",
+    "title": "Multidisciplinary Design",
+    "short_description": "Coupling CFD with structures, controls, thermal analysis, optimization, and systems engineering for aerospace vehicle design.",
+    "description": "Coupling CFD with structures, controls, thermal analysis, optimization, and systems engineering for aerospace vehicle design.",
+    "image": ""
+  }
+]

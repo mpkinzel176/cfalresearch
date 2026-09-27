@@ -1,0 +1,50 @@
+[
+  {
+    "id": "michael-goncalves",
+    "name": "Michael Gonçalves",
+    "role": "Postdoctoral Scholar",
+    "degree": "",
+    "research_area": "Dragonfly Lander CFD studies",
+    "years": "2025–present",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "funding": "NASA",
+    "location": "ERAU"
+  },
+  {
+    "id": "caroline-anderson",
+    "name": "Caroline Anderson",
+    "role": "Postdoctoral Scholar",
+    "degree": "Ph.D., Aerospace Engineering, University of Central Florida",
+    "research_area": "Hypersonic CFD and reentry vehicle design",
+    "years": "2025–present",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "funding": "AFRL",
+    "location": "ERAU",
+    "phd_thesis_title": "A Study of Aerodynamic Control of an Aeroshell Capsule using Transpiration Cooling",
+    "phd_years": "2019–2025",
+    "phd_university": "University of Central Florida"
+  },
+  {
+    "id": "brendon-cavainolo",
+    "name": "Brendon Cavainolo",
+    "role": "Postdoctoral Scholar",
+    "degree": "Ph.D., Aerospace Engineering, University of Central Florida",
+    "research_area": "Weather prediction for energy harvesting for autonomous gliders",
+    "years": "2024–present",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "funding": "DARPA",
+    "location": "ERAU / Advanced CFD Solutions",
+    "phd_thesis_title": "Direct Simulation of CMAS Deposition in Heated Environments",
+    "phd_years": "2021–2024",
+    "phd_university": "University of Central Florida"
+  }
+]
