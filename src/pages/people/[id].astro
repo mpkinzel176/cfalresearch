@@ -57,6 +57,18 @@ const isAlumni = ALUMNI.some((a) => a.id === person.id);
       </div>
     )}
 
+    {person.ms_thesis_title && (
+      <div class="mt-4 card p-5 max-w-2xl">
+        <p class="text-xs font-semibold uppercase tracking-wide text-(--color-slate-600)">M.S. Thesis{person.ms_university ? ` — ${person.ms_university}` : ''}{person.ms_years ? ` (${person.ms_years})` : ''}</p>
+        <p class="mt-2 italic">"{person.ms_thesis_title}"</p>
+        {person.ms_thesis_url && (
+          <a href={person.ms_thesis_url} target="_blank" rel="noopener" class="mt-3 inline-block text-sm font-semibold text-(--color-blue-600) hover:underline">
+            View thesis ↗
+          </a>
+        )}
+      </div>
+    )}
+
     {(person.current_position || person.current_employer) && (
       <p class="mt-6 text-sm">
         <span class="font-semibold text-(--color-slate-600)">Now:</span>{' '}

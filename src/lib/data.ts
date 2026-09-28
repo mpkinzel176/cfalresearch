@@ -173,7 +173,7 @@ function endYear(years: string | undefined): number {
 }
 
 export function allTheses(): ThesisEntry[] {
-  const entries: ThesisEntry[] = ALUMNI.filter((p) => p.thesis_title).map((p) => ({
+  const fromAlumni: ThesisEntry[] = ALUMNI.filter((p) => p.thesis_title).map((p) => ({
     personId: p.id,
     name: p.name,
     degree_level: (p.degree_level as string) ?? '',
@@ -184,7 +184,23 @@ export function allTheses(): ThesisEntry[] {
     linkedin: p.linkedin as string | undefined,
     research_tags: p.research_tags ?? [],
   }));
-  return entries.sort((a, b) => b.year - a.year);
+  // M.S. theses completed by current students on an M.S.-to-Ph.D. track --
+  // they have no separate alumni entry (they haven't left the lab), but the
+  // thesis itself is a real, completed, citable document that belongs here.
+  const fromCurrentMsMilestones: ThesisEntry[] = [...GRADUATE_STUDENTS, ...POSTDOCS]
+    .filter((p) => p.ms_thesis_title)
+    .map((p) => ({
+      personId: p.id,
+      name: p.name,
+      degree_level: 'M.S.',
+      university: (p.ms_university as string) ?? '',
+      title: p.ms_thesis_title as string,
+      url: (p.ms_thesis_url as string) ?? '',
+      year: endYear(p.ms_years as string | undefined),
+      linkedin: p.linkedin as string | undefined,
+      research_tags: p.research_tags ?? [],
+    }));
+  return [...fromAlumni, ...fromCurrentMsMilestones].sort((a, b) => b.year - a.year);
 }
 
 export function slugify(input: string): string {

@@ -1,5 +1,11 @@
 [
   {
+    "item": "⚠ \"Interim Associate Dean of Research\" title — please verify",
+    "issue": "Your CV lists this title (College of Engineering, Aug. 2026–Current) and it's currently shown on the site (faculty.json). A news-research pass fetched ERAU's current College of Engineering leadership page directly (erau.edu/academics/colleges/daytona-beach-college-of-engineering) and it does NOT list you in this role — it lists Dean Jim Gregory, Senior Associate Dean Sherif Ishak, and Associate Deans James Pembridge, Seetha Raghavan, and Daewon Kim (with Daewon Kim described elsewhere as interim associate dean for research/graduate studies). This could simply mean the org chart page is stale, or it could mean the CV line is no longer accurate — I can't tell which from here, and did not remove it from the site.",
+    "action_needed": "Please confirm this title is current before this site goes live publicly. If it's outdated, update src/data/people/faculty.json (role and titles fields) and the CV.",
+    "confidence": null
+  },
+  {
     "item": "CV corrected (2026-09-28)",
     "issue": "Seven thesis/dissertation title inconsistencies in KinzelCV_03092026.docx were corrected to match the verified titles on file with UCF's STARS repository: Reed Forehand (PhD), Caroline Anderson (PhD), Wayne Farrell (PhD), Brendon Cavainolo (PhD), Janice Zou (MS), Khanh Nguyen (MS), and Luis Amaya (MS, whose entry had been copy-pasted from Reed Forehand's MS thesis title). A backup of the pre-edit CV was saved alongside it as KinzelCV_03092026.backup-before-title-fix.docx.",
     "action_needed": "Spot-check the corrected CV (especially the Amaya/Forehand rows) and delete the backup file once you're satisfied.",
@@ -46,6 +52,12 @@
     "issue": "Per your instruction, LinkedIn identity-matching was skipped entirely for all ~30+ current members and alumni to avoid misattributing a profile to the wrong person.",
     "action_needed": "Add LinkedIn URLs directly to the relevant person object's \"linkedin\" field in src/data/people/*.json as you confirm them.",
     "confidence": null
+  },
+  {
+    "item": "Andres Torres M.S. thesis (ERAU)",
+    "issue": "Sagar Gharti's and Juan Roldan's ERAU M.S. theses were found and linked (commons.erau.edu), but no matching M.S. thesis for Andres Torres (LBM for real-time CFD, expected Summer 2026) was found in ERAU Scholarly Commons or ProQuest — likely not yet deposited/indexed.",
+    "action_needed": "Add ms_thesis_title/ms_thesis_url to his entry in src/data/people/graduate_students.json once it's deposited.",
+    "confidence": 0.3
   },
   {
     "item": "Zachary Miles thesis (UCF)",
