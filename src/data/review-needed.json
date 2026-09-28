@@ -7,8 +7,8 @@
   },
   {
     "item": "Jason Turner — B.S. Honors Thesis (Penn State)",
-    "issue": "A dissertation-search agent found a search snippet confirming a Kinzel-supervised B.S. honors thesis by a 'Turner' exists in Penn State's honors.libraries.psu.edu repository, but could not verify the exact catalog URL or confirm the title matches 'Development Of A Computationally Inexpensive Method Of Simulating Primary Droplet Breakup'.",
-    "action_needed": "Manually locate and confirm the thesis record; thesis_url left blank on the site pending confirmation.",
+    "issue": "A follow-up search found a specific matching facet record on honors.libraries.psu.edu (Author: Jason Eric Turner, Degree: B.S., Program: Aerospace Engineering, Thesis Supervisor: Dr. Michael P Kinzel, Honors Advisor: Dr. George A. Lesieutre, 2017) via this filtered search: https://honors.libraries.psu.edu/?f%5Bcommittee_member_name_ssim%5D%5B%5D=Dr.+Michael+P+Kinzel&f%5Blast_name_ssi%5D%5B%5D=Turner&f%5Bdegree_name_ssi%5D%5B%5D=B+S -- but the site returns HTTP 403 to automated fetches, so the exact catalog/PDF URL could not be resolved, and the indexed title shown ('An Evaluation of Computational Methods to Model Large Droplet Secondary Breakup') is suspiciously identical to Brendon Cavainolo's UCF honors thesis title already on this site (a different person, different school, different years) -- possible search-index cross-contamination rather than Turner's actual title. Do not trust that title without independent confirmation.",
+    "action_needed": "Open the filter URL above directly in a browser (it's a search page, not a direct record, so it wasn't used as a site link) to find Turner's actual catalog entry and confirm the real title before adding a thesis_url.",
     "confidence": 0.5
   },
   {
@@ -49,9 +49,21 @@
   },
   {
     "item": "Zachary Miles thesis (UCF)",
-    "issue": "No M.S. thesis record for Zachary Miles was found in UCF's STARS repository or ProQuest — may not yet be deposited/indexed.",
+    "issue": "No M.S. thesis record for Zachary Miles was found in UCF's STARS repository or ProQuest after two separate search passes — likely not yet deposited/indexed as of September 2026 (external corroboration confirms he worked on the matching research topic, just no deposited document yet).",
     "action_needed": "thesis_url left blank; add manually once available.",
     "confidence": 0.3
+  },
+  {
+    "item": "Anthony Domier thesis (UCF)",
+    "issue": "No thesis title was given in the CV for this student, and two search passes found no deposited M.S. thesis under this name in UCF's STARS repository or ProQuest.",
+    "action_needed": "Confirm whether he has completed/deposited a thesis; thesis_title and thesis_url left blank.",
+    "confidence": 0.3
+  },
+  {
+    "item": "Jose Urcia Ph.D. dissertation (UCF)",
+    "issue": "Confirmed via two independent search passes that no Ph.D. dissertation has been deposited in UCF's STARS repository or ProQuest under this name, despite the CV listing him as a current/recent Ph.D. student. An AIAA SciTech 2023 conference paper on the matching topic (coaxial rotor tip loss) confirms he was actively working in the area, but the dissertation itself does not yet appear to be deposited.",
+    "action_needed": "No action needed unless he has since defended; thesis_url intentionally left blank rather than linking his unrelated 2020 M.S. thesis.",
+    "confidence": 0.75
   },
   {
     "item": "Zachary Miles, Anthony Domier, Juanpablo Delgado — current position",
@@ -69,12 +81,6 @@
     "item": "Production domain (site URL)",
     "issue": "astro.config.mjs, public/robots.txt, and OpenGraph tags use a placeholder domain 'https://cfal.erau.edu' since no real deployment URL was available. This has NOT been verified to exist.",
     "action_needed": "Once you know the real production URL (a custom domain or your *.pages.dev URL), update the `site` field in astro.config.mjs and the Sitemap: line in public/robots.txt.",
-    "confidence": null
-  },
-  {
-    "item": "Lab contact email",
-    "issue": "No email address appears anywhere in the CV. The site currently uses 'cfal@erau.edu', carried over from your prior website draft (Website/index.html) as a placeholder lab alias — it has not been verified to exist or to reach you.",
-    "action_needed": "Confirm this address is live, or replace it in src/components/Footer.astro and src/pages/about/index.astro and src/pages/opportunities/index.astro with your actual contact email.",
     "confidence": null
   },
   {
