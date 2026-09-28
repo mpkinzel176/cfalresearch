@@ -170,6 +170,29 @@ misattributing a profile.
 No environment variables or server-side infrastructure are required -- this
 is a fully static site.
 
+## Visitor analytics (where people are visiting from)
+
+The site supports **Cloudflare Web Analytics** — free, cookieless (no consent
+banner needed), and privacy-friendly. Its dashboard shows visitor **country**,
+top pages, referrers, and traffic over time. It's built in but switched off
+until you give it a token:
+
+1. In the Cloudflare dashboard, go to **Analytics & Logs → Web Analytics →
+   Add a site**. Enter your site's hostname (your `*.pages.dev` URL or custom
+   domain) and choose the **manual JS snippet** option.
+2. Cloudflare shows a snippet containing `"token": "abcdef..."`. Copy just
+   that token value.
+3. In your **Cloudflare Pages project → Settings → Environment variables**,
+   add a variable named `PUBLIC_CF_ANALYTICS_TOKEN` with that value (set it
+   for Production, and Preview too if you like), then redeploy.
+4. (Optional, to test locally) copy `.env.example` to `.env` and paste the
+   token there. `.env` is gitignored, so it won't be committed.
+
+The token is public by design (it's visible in any page's HTML source), so
+it's fine that it appears in the built site. Data appears in the dashboard
+within a few minutes of the first real visit. With no token set, nothing
+analytics-related is added to the pages at all.
+
 ## What's still a placeholder
 
 - **Photos**: no student/staff photos were available; cards fall back to

@@ -1,14 +1,8 @@
 [
   {
-    "item": "⚠ \"Interim Associate Dean of Research\" title — please verify",
-    "issue": "Your CV lists this title (College of Engineering, Aug. 2026–Current) and it's currently shown on the site (faculty.json). A news-research pass fetched ERAU's current College of Engineering leadership page directly (erau.edu/academics/colleges/daytona-beach-college-of-engineering) and it does NOT list you in this role — it lists Dean Jim Gregory, Senior Associate Dean Sherif Ishak, and Associate Deans James Pembridge, Seetha Raghavan, and Daewon Kim (with Daewon Kim described elsewhere as interim associate dean for research/graduate studies). This could simply mean the org chart page is stale, or it could mean the CV line is no longer accurate — I can't tell which from here, and did not remove it from the site.",
-    "action_needed": "Please confirm this title is current before this site goes live publicly. If it's outdated, update src/data/people/faculty.json (role and titles fields) and the CV.",
-    "confidence": null
-  },
-  {
-    "item": "CV corrected (2026-09-28)",
-    "issue": "Seven thesis/dissertation title inconsistencies in KinzelCV_03092026.docx were corrected to match the verified titles on file with UCF's STARS repository: Reed Forehand (PhD), Caroline Anderson (PhD), Wayne Farrell (PhD), Brendon Cavainolo (PhD), Janice Zou (MS), Khanh Nguyen (MS), and Luis Amaya (MS, whose entry had been copy-pasted from Reed Forehand's MS thesis title). A backup of the pre-edit CV was saved alongside it as KinzelCV_03092026.backup-before-title-fix.docx.",
-    "action_needed": "Spot-check the corrected CV (especially the Amaya/Forehand rows) and delete the backup file once you're satisfied.",
+    "item": "CV corrected (2026-09-28, two rounds)",
+    "issue": "Ten thesis title inconsistencies in KinzelCV_03092026.docx were corrected to match verified deposited titles. Round 1 (UCF STARS): Reed Forehand (PhD), Caroline Anderson (PhD), Wayne Farrell (PhD), Brendon Cavainolo (PhD), Janice Zou (MS), Khanh Nguyen (MS), and Luis Amaya (MS, whose entry had been copy-pasted from Reed Forehand's). Round 2: Rajendra Shrestha (PhD, UCF STARS -- previously missed) and Juan Roldan + Sagar Gharti (ERAU M.S. theses, commons.erau.edu -- their M.S.-table rows had only a short working-topic placeholder, not the real deposited title; their Ph.D.-table rows correctly still show the same short placeholder since no dissertation exists yet). A backup of the CV from before round 1 was saved as KinzelCV_03092026.backup-before-title-fix.docx.",
+    "action_needed": "Spot-check the corrected CV and delete the backup file once you're satisfied.",
     "confidence": null
   },
   {
@@ -87,6 +81,12 @@
     "item": "Sponsor and funder logos",
     "issue": "No funder/sponsor logo image files were found in the project directory (only ERAU/UCF institutional logos, used for grant letters of support, not funder seals).",
     "action_needed": "Add logo image files to public/sponsors/ (see README.md) and set the matching \"logo\" path in src/data/sponsors.json. Left blank rather than fetched from the web to avoid using unverified third-party trademarked assets without your review.",
+    "confidence": null
+  },
+  {
+    "item": "Visitor analytics token (Cloudflare Web Analytics)",
+    "issue": "Analytics support is built in but off until a token is provided -- no tracking is active yet.",
+    "action_needed": "After creating the site in Cloudflare's Web Analytics dashboard, set PUBLIC_CF_ANALYTICS_TOKEN as an environment variable in your Cloudflare Pages project settings and redeploy. See README.md \"Visitor analytics\".",
     "confidence": null
   },
   {

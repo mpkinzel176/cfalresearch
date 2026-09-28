@@ -17,6 +17,10 @@ const {
 
 const pageTitle = title === 'CFAL' ? title : `${title} | CFAL`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// Cloudflare Web Analytics: cookieless and privacy-friendly, shows visitor
+// country/region, referrers, and pages. Only rendered when a token is set
+// (see README "Visitor analytics").
+const cfAnalyticsToken = import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN;
 ---
 
 <!doctype html>
@@ -57,6 +61,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <slot />
     </main>
     <Footer />
+    {cfAnalyticsToken && (
+      <script
+        is:inline
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({ token: cfAnalyticsToken })}
+      ></script>
+    )}
     <script is:inline>
       document.addEventListener('click', (e) => {
         const btn = e.target.closest('.copy-bibtex');
