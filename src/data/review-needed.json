@@ -1,5 +1,11 @@
 [
   {
+    "item": "CV corrected (2026-09-28)",
+    "issue": "Seven thesis/dissertation title inconsistencies in KinzelCV_03092026.docx were corrected to match the verified titles on file with UCF's STARS repository: Reed Forehand (PhD), Caroline Anderson (PhD), Wayne Farrell (PhD), Brendon Cavainolo (PhD), Janice Zou (MS), Khanh Nguyen (MS), and Luis Amaya (MS, whose entry had been copy-pasted from Reed Forehand's MS thesis title). A backup of the pre-edit CV was saved alongside it as KinzelCV_03092026.backup-before-title-fix.docx.",
+    "action_needed": "Spot-check the corrected CV (especially the Amaya/Forehand rows) and delete the backup file once you're satisfied.",
+    "confidence": null
+  },
+  {
     "item": "Aaron Foster",
     "issue": "Listed in CV's Ph.D. Students table (UCF, Mechanical Engineering, started 2020, thesis 'Evaluation of Transmission Physics of COVID-19 in Classroom Settings') with 'Year Ended: N/A' and present position 'Disney'. Unclear whether he completed the Ph.D. or left the program.",
     "action_needed": "Confirm degree completion status before adding to Alumni. Not currently included on the site.",
