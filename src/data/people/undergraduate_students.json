@@ -5,7 +5,7 @@
     "role": "Undergraduate Researcher",
     "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
     "research_area": "RCS thruster damage to satellites",
-    "years": "2024–present",
+    "years": "2024–2025",
     "photo": "",
     "linkedin": "",
     "personal_website": "",
@@ -18,20 +18,7 @@
     "role": "Undergraduate Researcher",
     "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
     "research_area": "RCS thruster damage to satellites and reentry vehicle design",
-    "years": "2024–present",
-    "photo": "",
-    "linkedin": "",
-    "personal_website": "",
-    "google_scholar": "",
-    "research_tags": ["space-planetary-aerodynamics", "hypersonics-reentry"]
-  },
-  {
-    "id": "colby-bolduc",
-    "name": "Colby Bolduc",
-    "role": "Undergraduate Researcher",
-    "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
-    "research_area": "RCS thruster damage to satellites and reentry vehicle design",
-    "years": "2024–present",
+    "years": "2024–2025",
     "photo": "",
     "linkedin": "",
     "personal_website": "",
@@ -50,5 +37,32 @@
     "personal_website": "",
     "google_scholar": "",
     "research_tags": ["multiphase-extreme-environment-flows"]
+  },
+  {
+    "id": "ethan-bratt",
+    "name": "Ethan Bratt",
+    "role": "Undergraduate Researcher",
+    "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
+    "research_area": "RCS thruster damage to satellites and plume-surface interaction modeling",
+    "years": "2024–2025",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "research_tags": ["space-planetary-aerodynamics"]
+  },
+  {
+    "id": "daniel-marquez",
+    "name": "Daniel Marquez",
+    "role": "Undergraduate Researcher",
+    "degree": "B.S., Aerospace Engineering, Embry-Riddle Aeronautical University",
+    "research_area": "Downmassing payload CFD",
+    "years": "2025–present",
+    "photo": "",
+    "linkedin": "",
+    "personal_website": "",
+    "google_scholar": "",
+    "funding": "AFRL",
+    "research_tags": ["hypersonics-reentry"]
   }
 ]

@@ -30,16 +30,10 @@
     "confidence": 0.7
   },
   {
-    "item": "Bryan Castellanos Martine, Noah Ryckebosch",
-    "issue": "Both appear as current graduate students (\"Quantum & space biology\" and \"Uranus probe\" respectively) in the prior website draft (Website/index.html), but neither name appears anywhere in KinzelCV_03092026.docx.",
-    "action_needed": "Confirm these are current lab members and provide their program/year/research details before adding them to graduate_students.json. Not currently included on the site since the CV is the source of truth.",
+    "item": "Noah Ryckebosch",
+    "issue": "Appears as a current graduate student (\"Uranus probe\") in the prior website draft (Website/index.html), but does not appear in the updated CV (KinzelCV_03092026.docx, updated 2026-09-28).",
+    "action_needed": "Confirm whether this is a current lab member and provide their program/year/research details before adding them to graduate_students.json. Not currently included on the site since the CV is the source of truth. (Note: Bryan Castellanos Martinez, previously flagged alongside this name, is now confirmed and added — he appears in the updated CV as a current Ph.D. student.)",
     "confidence": 0.3
-  },
-  {
-    "item": "Colby Bolduc — degree level",
-    "issue": "The prior website draft lists Colby Bolduc as an M.S. student (\"reentry vehicle optimization\"). The CV's 'Undergraduate Research Supervised' table lists him as an undergraduate (\"RCS Thruster Damage to Satellites and reentry vehicle design\", 2024–Current).",
-    "action_needed": "Confirm current degree level/program; site currently follows the CV (undergraduate) per the CV-as-source-of-truth instruction.",
-    "confidence": 0.6
   },
   {
     "item": "LinkedIn profiles — all people",

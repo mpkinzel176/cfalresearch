@@ -28,12 +28,14 @@
     "years": "2019–2025",
     "funding": "ORC / Navy / NSF / NASA NSTGRO Fellowship",
     "linkedin": "",
-    "current_position": "Postdoctoral Scholar",
-    "current_employer": "Embry-Riddle Aeronautical University / NASA",
+    "current_position": "",
+    "current_employer": "NASA Kennedy Space Center",
     "research_tags": ["hypersonics-reentry"],
-    "note": "Continues in the lab as a current postdoctoral scholar — see People > Current.",
+    "note": "Completed a postdoctoral appointment at CFAL/ERAU (2025–2026, funded by AFRL) before moving to NASA Kennedy Space Center.",
     "ms_thesis_title": "Optimization of a Wing Supporting a Coaxial Rotor for Multiple Flight Conditions",
-    "ms_years": "2019–2021"
+    "ms_years": "2019–2021",
+    "postdoc_years": "2025–2026",
+    "postdoc_institution": "Embry-Riddle Aeronautical University"
   },
   {
     "id": "jose-urcia",
