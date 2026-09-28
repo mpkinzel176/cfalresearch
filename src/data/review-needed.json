@@ -90,12 +90,6 @@
     "confidence": null
   },
   {
-    "item": "Production domain (site URL)",
-    "issue": "astro.config.mjs, public/robots.txt, and OpenGraph tags use a placeholder domain 'https://cfal.erau.edu' since no real deployment URL was available. This has NOT been verified to exist.",
-    "action_needed": "Once you know the real production URL (a custom domain or your *.pages.dev URL), update the `site` field in astro.config.mjs and the Sitemap: line in public/robots.txt.",
-    "confidence": null
-  },
-  {
     "item": "Photos",
     "issue": "No student/staff photographs were found in the project directory. Only Dr. Kinzel's ERAU directory photo URL (from Laboratory Name.docx) and the CFAL/ERAU logo files were available.",
     "action_needed": "Add photo files to public/people/ and set the \"photo\" field for each person in src/data/people/*.json.",

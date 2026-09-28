@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cfal.erau.edu/sitemap-index.xml
+Sitemap: https://www.cfalresearch.com/sitemap-index.xml
