@@ -10,9 +10,7 @@ function bibtex(p: Publication): string {
   return `@article{${key},
   title={${p.title}},
   author={${authors}},
-  journal={${p.journal}},
-  volume={${p.volume}},
-  pages={${p.pages}},
+  journal={${p.venue_detail || p.journal}},
   year={${p.year}}${p.doi ? `,\n  doi={${p.doi}}` : ''}
 }`;
 }
@@ -23,7 +21,7 @@ function bibtex(p: Publication): string {
   <div>
     <h3 class="text-[0.95rem] font-semibold leading-snug">{pub.title}</h3>
     <p class="mt-1 text-xs text-(--color-slate-600)">{pub.authors.join(', ')}</p>
-    {pub.journal && <p class="text-xs italic text-(--color-slate-400)">{pub.journal}</p>}
+    {pub.venue_detail && <p class="text-xs italic text-(--color-slate-400)">{pub.venue_detail}</p>}
     <div class="mt-2 flex flex-wrap items-center gap-3 text-xs">
       {pub.url && (
         <a href={pub.url} target="_blank" rel="noopener" class="font-semibold text-(--color-blue-600) hover:underline">

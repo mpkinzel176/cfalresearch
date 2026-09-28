@@ -63,8 +63,7 @@ export type Publication = {
   authors: string[];
   title: string;
   journal: string;
-  volume: string;
-  pages: string;
+  venue_detail: string;
   doi: string;
   url: string;
   scholar_url: string;

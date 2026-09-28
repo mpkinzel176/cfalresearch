@@ -10,7 +10,9 @@
 [CmdletBinding()]
 param(
   [string]$ProfileId = 'LI9BgQkAAAAJ',
-  [int]$StartYear = (Get-Date).AddYears(-5).Year
+  # Full career history by default (his profile goes back to the early 2000s).
+  # Override with -StartYear if you ever want a shorter window again.
+  [int]$StartYear = 2000
 )
 
 $ErrorActionPreference = 'Stop'

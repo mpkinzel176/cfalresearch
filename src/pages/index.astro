@@ -3,16 +3,20 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import ResearchCard from '@/components/ResearchCard.astro';
 import ProjectCard from '@/components/ProjectCard.astro';
 import PersonCard from '@/components/PersonCard.astro';
+import AlumniCard from '@/components/AlumniCard.astro';
 import PublicationItem from '@/components/PublicationItem.astro';
 import SponsorStrip from '@/components/SponsorStrip.astro';
 import {
-  RESEARCH_AREAS, PROJECTS, FACULTY, POSTDOCS, GRADUATE_STUDENTS, PUBLICATIONS,
+  RESEARCH_AREAS, PROJECTS, FACULTY, POSTDOCS, GRADUATE_STUDENTS, PUBLICATIONS, ALUMNI,
 } from '@/lib/data';
 import { getCollection } from 'astro:content';
 
 const featuredProjects = PROJECTS.filter((p) => p.status === 'active').slice(0, 6);
 const featuredPeople = [...FACULTY, ...GRADUATE_STUDENTS.slice(0, 5), ...POSTDOCS.slice(0, 2)];
 const recentPubs = PUBLICATIONS.slice(0, 5);
+// A handful of alumni with a recognizable "next step" to make it obvious at a
+// glance that this page tracks where students end up -- not just who's here now.
+const featuredAlumni = ALUMNI.filter((a) => a.current_employer && a.thesis_url).slice(0, 6);
 const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
 ---
 
@@ -76,6 +80,21 @@ const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() 
   </section>
 
   <section class="bg-(--color-paper) py-16">
+    <div class="container-lab">
+      <div class="flex items-end justify-between gap-4 mb-8">
+        <div>
+          <h2 class="font-display text-2xl font-semibold sm:text-3xl">Where Our Alumni Go</h2>
+          <p class="mt-1 text-sm text-(--color-slate-600)">{ALUMNI.length} former students across Embry-Riddle, UCF, and Penn State.</p>
+        </div>
+        <a href="/people#alumni" class="text-sm font-semibold text-(--color-blue-600) hover:underline">All alumni →</a>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {featuredAlumni.map((p) => <AlumniCard person={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
     <div class="container-lab grid gap-10 lg:grid-cols-[2fr_1fr]">
       <div>
         <div class="flex items-end justify-between gap-4 mb-6">
