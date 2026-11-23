@@ -1,14 +1,14 @@
 {
   "source": "https://scholar.google.com/citations?user=LI9BgQkAAAAJ&hl=en",
-  "refreshedAt": "2026-10-12T19:05:53.4281101Z",
+  "refreshedAt": "2026-11-23T21:28:24.4320135Z",
   "startYear": 2000,
   "publications": [
     {
       "year": 2026,
-      "title": "Effects of Containerless Curing Through In Situ Characterization with Acoustic Levitation to Advance Manufacturing of Nanocomposites in Microgravity",
-      "authors": "P Jantananont, E Levenson, C Benmore, M Kinzel, S Raghavan",
-      "venue": "Journal of Visualized Experiments (JoVE), e72399, 2026",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:c_xDhezhKKUC"
+      "title": "Pendant drop rotation in vertical, turbulent, shearing flows",
+      "authors": "JD Dockery, S Gharti, MP Kinzel, AK Dickerson",
+      "venue": "Experiments in Fluids 67 (12), 185, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:LK8CI43ZvvMC"
     },
     {
       "year": 2026,
@@ -117,10 +117,10 @@
     },
     {
       "year": 2026,
-      "title": "Pendant drop rotation in vertical, turbulent, shearing flows",
-      "authors": "JD Dockery, S Gharti, M Kinzel, AK Dickerson",
-      "venue": "",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:LK8CI43ZvvMC"
+      "title": "Effects of Containerless Curing Through In Situ Characterization with Acoustic Levitation to Advance Manufacturing of Nanocomposites in Microgravity",
+      "authors": "P Jantananont, E Levenson, C Benmore, M Kinzel, S Raghavan",
+      "venue": "Journal of Visualized Experiments (JoVE), e72399, 2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:c_xDhezhKKUC"
     },
     {
       "year": 2026,
@@ -131,7 +131,7 @@
     },
     {
       "year": 2026,
-      "title": "Evaluation of Turbulence Modeling Effects on Ground Shear Stress and Tip Vortex Dynamics for the Dragonfly Rotor in Ground Effect",
+      "title": "Turbulence Modeling Effects on Wall Shear Stress for a Dragonfly Rotor in Ground Effect",
       "authors": "M Marques, J Asiatico, R Lorenz, M Kinzel",
       "venue": "",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:X0DADzN9RKwC"
@@ -229,9 +229,9 @@
     },
     {
       "year": 2025,
-      "title": "The Dragonfly Saltation Experiment: Flowfield and Measurements",
-      "authors": "RD Lorenz, J Asiatico, M Kinzel, SM MacKenzie, A Chatain, J Radebaugh",
-      "venue": "LPI Contributions 3072, 3013, 2025",
+      "title": "The Dragonfly saltation experiment: flowfield and measurments",
+      "authors": "RD Lorenz, J Asiatico, M Kinzel, SM Mackenzie, A Chatain, J Radebaugh",
+      "venue": "8th International Planetary Dunes Workshop, 2025",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:Zh0EY9V9P6UC"
     },
     {
@@ -433,7 +433,7 @@
     {
       "year": 2024,
       "title": "In-Space Manufacturing of Functional Sensors Sensors",
-      "authors": "J Astacio, ML Sorgi_Johann, Z Stein, L Facchini, J Wischek, M Bartsch, ...",
+      "authors": "J Astacio, ML Sorgi Johann, Z Stein, L Facchini, J Wischek, M Bartsch, ...",
       "venue": "International Astronautical Federation (IAF), 2024",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:hvmnpdAuIbkC"
     },
@@ -587,8 +587,8 @@
     {
       "year": 2023,
       "title": "Porous Media Modelling for Transpiration Cooling Application",
-      "authors": "C Anderson, M Kinzel",
-      "venue": "Bulletin of the American Physical Society, 2023",
+      "authors": "CJ Anderson, MP Kinzel",
+      "venue": "76th Annual Meeting of the Division of Fluid Dynamics, 2023",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:v6i8RKmR8ToC"
     },
     {
@@ -845,10 +845,10 @@
     },
     {
       "year": 2021,
-      "title": "Numerical Analysis on the Full Phase Flow Dynamics of Covid-19 Droplets Transmission",
-      "authors": "R Shrestha, J Delgado, M Kinzel",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, M17. 002, 2021",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:-95Q15plzcUC"
+      "title": "Investigation of Dynamic Shock-Vortex Interactions in Compressible Low Reynolds Number Flows on 3D Wings",
+      "authors": "W Farrell, M Kinzel",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, Q21. 001, 2021",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:O0nohqN1r9EC"
     },
     {
       "year": 2021,
@@ -873,10 +873,10 @@
     },
     {
       "year": 2021,
-      "title": "Investigation of Dynamic Shock-Vortex Interactions in Compressible Low Reynolds Number Flows on 3D Wings",
-      "authors": "W Farrell, M Kinzel",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, Q21. 001, 2021",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:O0nohqN1r9EC"
+      "title": "Numerical Analysis on the Full Phase Flow Dynamics of Covid-19 Droplets Transmission",
+      "authors": "R Shrestha, J Delgado, M Kinzel",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, M17. 002, 2021",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:-95Q15plzcUC"
     },
     {
       "year": 2021,
@@ -950,13 +950,6 @@
     },
     {
       "year": 2020,
-      "title": "Lagrangian Numerical Analysis of Liquid Jet in Subsonic Crossflow",
-      "authors": "DH Fontes, RW Forehand, MP Kinzel",
-      "venue": "AIAA Scitech 2020 Forum, 0358, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:L1USKYWJimsC"
-    },
-    {
-      "year": 2020,
       "title": "Numerical model of jet impingement and particle trajectories in extraterrestrial landing events using an Euler-Lagrange method",
       "authors": "TR Yeager, DH Fontes, P Metzger, MP Kinzel",
       "venue": "AIAA Scitech 2020 Forum, 1808, 2020",
@@ -1013,6 +1006,13 @@
     },
     {
       "year": 2020,
+      "title": "In-situ xrd characterization of multilayered ceramic composite systems for hypersonic applications",
+      "authors": "J Hernandez, Q Fouliard, C Anderson, M Northam, K Vo, J Clabaugh, ...",
+      "venue": "23rd AIAA International Space Planes and Hypersonic Systems and Technologies …, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:6bLC7aUMtPcC"
+    },
+    {
+      "year": 2020,
       "title": "Saliva content and viscosity and its impact on droplet formation and pathogen transmission",
       "authors": "M Kinzel, J Reyes, D Fontes, M Otero, K Ahmed",
       "venue": "APS Division of Fluid Dynamics Meeting Abstracts, S03. 018, 2020",
@@ -1027,10 +1027,10 @@
     },
     {
       "year": 2020,
-      "title": "Investigation of Dynamic Shock-Vortex Interactions in Compressible Low Reynolds Number Flows",
-      "authors": "W Farrell, M Kinzel",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, F08. 004, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:q-HalDI95KYC"
+      "title": "Lagrangian Numerical Analysis of Liquid Jet in Subsonic Crossflow",
+      "authors": "DH Fontes, RW Forehand, MP Kinzel",
+      "venue": "AIAA Scitech 2020 Forum, 0358, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:L1USKYWJimsC"
     },
     {
       "year": 2020,
@@ -1041,59 +1041,10 @@
     },
     {
       "year": 2020,
-      "title": "Modeling Droplet Breakup of Viscoelastic Fluids for Mitigation of Viral Particulate Transmission",
-      "authors": "C Anderson, DH Fontes, M Kinzel",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, S03. 016, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:1Ye0OR6EYb4C"
-    },
-    {
-      "year": 2020,
-      "title": "Modifications To Conventional Jet Flaps using Liquid Sprays",
-      "authors": "G Loubimov, D Fontes, M Kinzel",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, W01. 005, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:OBSaB-F7qqsC"
-    },
-    {
-      "year": 2020,
-      "title": "Unsteady Ground Effects On A Rectangular and Swept Wing During Deceleration",
-      "authors": "DR Adhikari, G Loubimov, M Kinzel, S Bhattacharya",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, X01. 017, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:QyXJ3EUuO1IC"
-    },
-    {
-      "year": 2020,
-      "title": "Measuring atmospheric boundary layer profiles using uav dynamic response",
-      "authors": "W Farrell, G Loubimov, C Kaminski, MP Kinzel",
-      "venue": "AIAA Scitech Forum, 2020, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:U_HPUtbDl20C"
-    },
-    {
-      "year": 2020,
-      "title": "Unsteady lift prediction with a higher-order potential flow method",
-      "authors": "JA Cole, MD Maughmer, G Bramesfeld, M Melville, M Kinzel",
-      "venue": "Aerospace 7 (5), 60, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:WC9gN4BGCRcC"
-    },
-    {
-      "year": 2020,
-      "title": "A Computational Fluid Dynamic Study of a Momentum and Energy Method on Rough Surfaces",
-      "authors": "J Urcia, M Kinzel",
-      "venue": "Fluids Engineering Division Summer Meeting 83730, V003T05A041, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:SjuI4pbJlxcC"
-    },
-    {
-      "year": 2020,
-      "title": "Using Liquid Spray Formations to Improve Aerodynamic Performance of Airfoils",
-      "authors": "G Loubimov, D Fontes, G Loving, M Kinzel",
-      "venue": "Fluids Engineering Division Summer Meeting 83716, V001T01A018, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:jFemdcug13IC"
-    },
-    {
-      "year": 2020,
-      "title": "A verification and validation study with respect to simulating undulating propulsion",
-      "authors": "G Loubimov, MP Kinzel",
-      "venue": "Fluids Engineering Division Summer Meeting 83730, V003T05A052, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:KaMxkj08jr0C"
+      "title": "Investigation of Dynamic Shock-Vortex Interactions in Compressible Low Reynolds Number Flows",
+      "authors": "W Farrell, M Kinzel",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, F08. 004, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:q-HalDI95KYC"
     },
     {
       "year": 2020,
@@ -1104,59 +1055,66 @@
     },
     {
       "year": 2020,
-      "title": "In-situ xrd characterization of multilayered ceramic composite systems for hypersonic applications",
-      "authors": "J Hernandez, Q Fouliard, C Anderson, M Northam, K Vo, J Clabaugh, ...",
-      "venue": "23rd AIAA International Space Planes and Hypersonic Systems and Technologies …, 2020",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:6bLC7aUMtPcC"
+      "title": "Using Liquid Spray Formations to Improve Aerodynamic Performance of Airfoils",
+      "authors": "G Loubimov, D Fontes, G Loving, M Kinzel",
+      "venue": "Fluids Engineering Division Summer Meeting 83716, V001T01A018, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:jFemdcug13IC"
     },
     {
-      "year": 2019,
-      "title": "A cfd-based assessment of undulating propulsion",
-      "authors": "GE Loubimov, MP Kinzel",
-      "venue": "AIAA Aviation 2019 Forum, 3583, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:7wO8s98CvbsC"
+      "year": 2020,
+      "title": "A Computational Fluid Dynamic Study of a Momentum and Energy Method on Rough Surfaces",
+      "authors": "J Urcia, M Kinzel",
+      "venue": "Fluids Engineering Division Summer Meeting 83730, V003T05A041, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:SjuI4pbJlxcC"
     },
     {
-      "year": 2019,
-      "title": "An efficient CFD approach for co-axial rotor simulations",
-      "authors": "JK Cornelius, MP Kinzel, S Schmitz",
-      "venue": "AIAA Scitech 2019 Forum, 1658, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:7BrZ7Jt4UNcC"
+      "year": 2020,
+      "title": "Unsteady lift prediction with a higher-order potential flow method",
+      "authors": "JA Cole, MD Maughmer, G Bramesfeld, M Melville, M Kinzel",
+      "venue": "Aerospace 7 (5), 60, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:WC9gN4BGCRcC"
     },
     {
-      "year": 2019,
-      "title": "An evaluation of droplet breakup characteristics for low-and high-speed vehicle impacts",
-      "authors": "M Kinzel, J Turner, B Cavainolo, C Anderson, UIUC Team, CFAL Team",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, M04. 021, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:7H_MAutzIkAC"
+      "year": 2020,
+      "title": "A verification and validation study with respect to simulating undulating propulsion",
+      "authors": "G Loubimov, MP Kinzel",
+      "venue": "Fluids Engineering Division Summer Meeting 83730, V003T05A052, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:KaMxkj08jr0C"
     },
     {
-      "year": 2019,
-      "title": "Design, Fabrication and Preliminary Testing of an Experimental Measurement Rig for Co-Axial Rotors",
-      "authors": "S Yan, D Getz, JL Palacios, MP Kinzel, S Schmitz, JW Langelaan",
-      "venue": "AIAA Scitech 2019 Forum, 1096, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:PaBasH6fAo0C"
+      "year": 2020,
+      "title": "Measuring atmospheric boundary layer profiles using uav dynamic response",
+      "authors": "W Farrell, G Loubimov, C Kaminski, MP Kinzel",
+      "venue": "AIAA Scitech Forum, 2020, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:U_HPUtbDl20C"
     },
     {
-      "year": 2019,
-      "title": "Higher-order free-wake method for propeller–wing systems",
-      "authors": "JA Cole, MD Maughmer, M Kinzel, G Bramesfeld",
-      "venue": "Journal of Aircraft 56 (1), 150-165, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:Ak0FvsSvgGUC"
+      "year": 2020,
+      "title": "Unsteady Ground Effects On A Rectangular and Swept Wing During Deceleration",
+      "authors": "DR Adhikari, G Loubimov, M Kinzel, S Bhattacharya",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, X01. 017, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:QyXJ3EUuO1IC"
     },
     {
-      "year": 2019,
-      "title": "CFD Assisted QLPV Representation of a 2-DOF Flat Plate",
-      "authors": "W Farrell, MP Kinzel",
-      "venue": "AIAA Aviation 2019 Forum, 3608, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:WC23djZS0W4C"
+      "year": 2020,
+      "title": "Modifications To Conventional Jet Flaps using Liquid Sprays",
+      "authors": "G Loubimov, D Fontes, M Kinzel",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, W01. 005, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:OBSaB-F7qqsC"
     },
     {
-      "year": 2019,
-      "title": "An investigation of the behavior of a coaxial rotor in descent and ground effect",
-      "authors": "MP Kinzel, JK Cornelius, S Schmitz, JL Palacios, JW Langelaan, ...",
-      "venue": "AIAA Scitech 2019 Forum, 1098, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:nRpfm8aw39MC"
+      "year": 2020,
+      "title": "Modeling Droplet Breakup of Viscoelastic Fluids for Mitigation of Viral Particulate Transmission",
+      "authors": "C Anderson, DH Fontes, M Kinzel",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, S03. 016, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:1Ye0OR6EYb4C"
+    },
+    {
+      "year": 2020,
+      "title": "RAPID: Fluid Dynamic Driving Mechanisms of Airborne Pathogen Transmission and Control",
+      "authors": "MP Kinzel, K Ahmed",
+      "venue": "NSF Award 20 (2031227), 31227, 2020",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:dAp6zn-oMfAC"
     },
     {
       "year": 2019,
@@ -1167,17 +1125,52 @@
     },
     {
       "year": 2019,
-      "title": "LES of Compressible Gas Flow Impinging on a Wall using High Order Schemes in an Unstructured Grid",
-      "authors": "D Fontes, M Kinzel",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, S19. 004, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:owLR8QvbtFgC"
+      "title": "Higher-order free-wake method for propeller–wing systems",
+      "authors": "JA Cole, MD Maughmer, M Kinzel, G Bramesfeld",
+      "venue": "Journal of Aircraft 56 (1), 150-165, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:Ak0FvsSvgGUC"
     },
     {
       "year": 2019,
-      "title": "An assessment of computational fluid dynamics cavitation models using bubble growth theory and bubble transport modeling",
-      "authors": "MP Kinzel, JW Lindau, RF Kunz",
-      "venue": "Journal of Fluids Engineering 141 (4), 041301, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:1taIhTC69MYC"
+      "title": "Design, Fabrication and Preliminary Testing of an Experimental Measurement Rig for Co-Axial Rotors",
+      "authors": "S Yan, D Getz, JL Palacios, MP Kinzel, S Schmitz, JW Langelaan",
+      "venue": "AIAA Scitech 2019 Forum, 1096, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:PaBasH6fAo0C"
+    },
+    {
+      "year": 2019,
+      "title": "An investigation of the behavior of a coaxial rotor in descent and ground effect",
+      "authors": "MP Kinzel, JK Cornelius, S Schmitz, JL Palacios, JW Langelaan, ...",
+      "venue": "AIAA Scitech 2019 Forum, 1098, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:nRpfm8aw39MC"
+    },
+    {
+      "year": 2019,
+      "title": "An efficient CFD approach for co-axial rotor simulations",
+      "authors": "JK Cornelius, MP Kinzel, S Schmitz",
+      "venue": "AIAA Scitech 2019 Forum, 1658, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:7BrZ7Jt4UNcC"
+    },
+    {
+      "year": 2019,
+      "title": "A cfd-based assessment of undulating propulsion",
+      "authors": "GE Loubimov, MP Kinzel",
+      "venue": "AIAA Aviation 2019 Forum, 3583, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:7wO8s98CvbsC"
+    },
+    {
+      "year": 2019,
+      "title": "Evaluation of a subgrid-scale computational fluid dynamics model for ice roughness",
+      "authors": "DR Hanson, MP Kinzel",
+      "venue": "Journal of Aircraft 56 (2), 787-799, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:MpfHP-DdYjUC"
+    },
+    {
+      "year": 2019,
+      "title": "CFD Assisted QLPV Representation of a 2-DOF Flat Plate",
+      "authors": "W Farrell, MP Kinzel",
+      "venue": "AIAA Aviation 2019 Forum, 3608, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:WC23djZS0W4C"
     },
     {
       "year": 2019,
@@ -1188,24 +1181,17 @@
     },
     {
       "year": 2019,
-      "title": "Validation of the discrete element roughness method for predicting heat transfer on rough surfaces",
-      "authors": "DR Hanson, MP Kinzel, ST McClain",
-      "venue": "International Journal of Heat and Mass Transfer 136, 1217-1232, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:WHdLCjDvYFkC"
+      "title": "An assessment of computational fluid dynamics cavitation models using bubble growth theory and bubble transport modeling",
+      "authors": "MP Kinzel, JW Lindau, RF Kunz",
+      "venue": "Journal of Fluids Engineering 141 (4), 041301, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:1taIhTC69MYC"
     },
     {
       "year": 2019,
-      "title": "Effects of maximum particle size on the results of hydrometer tests on soils",
-      "authors": "SP Kakuturu, M Xiao, M Kinzel",
-      "venue": "Geotechnical Testing Journal 42 (4), 945-965, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:CB2v5VPnA5kC"
-    },
-    {
-      "year": 2019,
-      "title": "Analysis of the Flow Over a Sphere Using Direct Simulation Monte Carlo Method in OpenFOAM",
-      "authors": "T Yeager, D Fontes, M Kinzel",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, M02. 038, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:wKETBy42zhYC"
+      "title": "LES of Compressible Gas Flow Impinging on a Wall using High Order Schemes in an Unstructured Grid",
+      "authors": "D Fontes, M Kinzel",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, S19. 004, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:owLR8QvbtFgC"
     },
     {
       "year": 2019,
@@ -1216,10 +1202,31 @@
     },
     {
       "year": 2019,
-      "title": "Evaluation of a subgrid-scale computational fluid dynamics model for ice roughness",
-      "authors": "DR Hanson, MP Kinzel",
-      "venue": "Journal of Aircraft 56 (2), 787-799, 2019",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:MpfHP-DdYjUC"
+      "title": "Analysis of the Flow Over a Sphere Using Direct Simulation Monte Carlo Method in OpenFOAM",
+      "authors": "T Yeager, D Fontes, M Kinzel",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, M02. 038, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:wKETBy42zhYC"
+    },
+    {
+      "year": 2019,
+      "title": "An evaluation of droplet breakup characteristics for low-and high-speed vehicle impacts",
+      "authors": "M Kinzel, J Turner, B Cavainolo, C Anderson, UIUC Team, CFAL Team",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, M04. 021, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:7H_MAutzIkAC"
+    },
+    {
+      "year": 2019,
+      "title": "Effects of maximum particle size on the results of hydrometer tests on soils",
+      "authors": "SP Kakuturu, M Xiao, M Kinzel",
+      "venue": "Geotechnical Testing Journal 42 (4), 945-965, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:CB2v5VPnA5kC"
+    },
+    {
+      "year": 2019,
+      "title": "Validation of the discrete element roughness method for predicting heat transfer on rough surfaces",
+      "authors": "DR Hanson, MP Kinzel, ST McClain",
+      "venue": "International Journal of Heat and Mass Transfer 136, 1217-1232, 2019",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:WHdLCjDvYFkC"
     },
     {
       "year": 2018,
@@ -1246,15 +1253,8 @@
       "year": 2018,
       "title": "Simulation of a Helicopter-Ship Dynamic Interface Using Offline Database of Atmospheric Turbulence-Modified Airwake",
       "authors": "R Thedin, M Kinzel, S Schmitz",
-      "venue": "Vertical Flight Society 74th Annual Forum and Technology Display, 2018",
+      "venue": "Vertical Flight Society 74th Annual Forum and Technology Display 74, 2018",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:LdasjJ6CEcoC"
-    },
-    {
-      "year": 2018,
-      "title": "A multiphase level-set approach for all-Mach numbers",
-      "authors": "MP Kinzel, JW Lindau, RF Kunz",
-      "venue": "Computers & Fluids 167, 1-16, 2018",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:BzfGm06jWhQC"
     },
     {
       "year": 2018,
@@ -1265,10 +1265,10 @@
     },
     {
       "year": 2018,
-      "title": "Direct Numerical Simulation, Up-Scaled Measurement and RANS Analysis of Additively and Conventionally Manufactured Internal Turbine Cooling Passages",
-      "authors": "R Kunz, D Hanson, S McClain, M Kinzel, E Reutzel, J Snyder, K Thole",
-      "venue": "DOE NETL UTSR, 2018",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:MhiOAD_qIWkC"
+      "title": "A multiphase level-set approach for all-Mach numbers",
+      "authors": "MP Kinzel, JW Lindau, RF Kunz",
+      "venue": "Computers & Fluids 167, 1-16, 2018",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:BzfGm06jWhQC"
     },
     {
       "year": 2018,
@@ -1300,10 +1300,24 @@
     },
     {
       "year": 2018,
+      "title": "Direct Numerical Simulation, Up-Scaled Measurement and RANS Analysis of Additively and Conventionally Manufactured Internal Turbine Cooling Passages",
+      "authors": "R Kunz, D Hanson, S McClain, M Kinzel, E Reutzel, J Snyder, K Thole",
+      "venue": "DOE NETL UTSR, 2018",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:MhiOAD_qIWkC"
+    },
+    {
+      "year": 2018,
       "title": "Direct Numerical Simulation of Additively and Conventionally Manufactured Internal Turbine Cooling Passages",
       "authors": "DR Hanson, ST McClain, RF Kunz, M Kinzel, EW Reutzel, KA Thole, ...",
       "venue": "71st Annual Meeting of the APS Division of Fluid Dynamics, 2018",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:cK4Rrx0J3m0C"
+    },
+    {
+      "year": 2017,
+      "title": "CFD hover predictions including boundary-layer transition",
+      "authors": "BA Vieira, MP Kinzel, MD Maughmer",
+      "venue": "55th AIAA Aerospace Sciences Meeting, 1665, 2017",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:j3f4tGmQtD8C"
     },
     {
       "year": 2017,
@@ -1330,7 +1344,7 @@
       "year": 2017,
       "title": "High-Fidelity Simulations of the Interaction of Atmospheric Turbulence with Ship Airwakes",
       "authors": "R Thedin, M Kinzel, S Schmitz",
-      "venue": "Vertical Flight Society 73rd Annual Forum and Technology Display, 2017",
+      "venue": "Vertical Flight Society 73rd Annual Forum and Technology Display 73, 2017",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:otzGkya1bYkC"
     },
     {
@@ -1339,13 +1353,6 @@
       "authors": "MP Kinzel, MH Krane, IN Kirschner, MJ Moeny",
       "venue": "Ocean Engineering 136, 304-313, 2017",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:bEWYMUwI8FkC"
-    },
-    {
-      "year": 2017,
-      "title": "CFD hover predictions including boundary-layer transition",
-      "authors": "BA Vieira, MP Kinzel, MD Maughmer",
-      "venue": "55th AIAA Aerospace Sciences Meeting, 1665, 2017",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:j3f4tGmQtD8C"
     },
     {
       "year": 2017,
@@ -1363,6 +1370,27 @@
     },
     {
       "year": 2017,
+      "title": "An assessment of CFD cavitation models using bubble growth theory and bubble transport modeling",
+      "authors": "MP Kinzel, RF Kunz, JW Lindau",
+      "venue": "17th International Symposium on Transport Phenomena and Dynamics of Rotating …, 2017",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:48xauSegjOkC"
+    },
+    {
+      "year": 2017,
+      "title": "Numerical study of ship airwake characteristics immersed in atmospheric boundary-layer flow",
+      "authors": "R Thedin, M Kinzel, S Schmitz",
+      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, F39. 005, 2017",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:4X0JR2_MtJMC"
+    },
+    {
+      "year": 2017,
+      "title": "A unified homogenous multiphase CFD model for cavitation",
+      "authors": "MP Kinzel, JW Lindau, RF Kunz",
+      "venue": "Fluids Engineering Division Summer Meeting 58059, V01BT11A020, 2017",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:0CzhzZyukY4C"
+    },
+    {
+      "year": 2017,
       "title": "An improved CFD approach for ice-accretion prediction using the discrete element roughness method",
       "authors": "D Hanson, M Kinzel",
       "venue": "Fluids Engineering Division Summer Meeting 58066, V01CT19A004, 2017",
@@ -1376,67 +1404,11 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:Bg7qf7VwUHIC"
     },
     {
-      "year": 2017,
-      "title": "Numerical study of ship airwake characteristics immersed in atmospheric boundary-layer flow",
-      "authors": "R Thedin, M Kinzel, S Schmitz",
-      "venue": "APS Division of Fluid Dynamics Meeting Abstracts, F39. 005, 2017",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:4X0JR2_MtJMC"
-    },
-    {
-      "year": 2017,
-      "title": "An assessment of CFD cavitation models using bubble growth theory and bubble transport modeling",
-      "authors": "MP Kinzel, RF Kunz, JW Lindau",
-      "venue": "17th International Symposium on Transport Phenomena and Dynamics of Rotating …, 2017",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:48xauSegjOkC"
-    },
-    {
-      "year": 2017,
-      "title": "A unified homogenous multiphase CFD model for cavitation",
-      "authors": "MP Kinzel, JW Lindau, RF Kunz",
-      "venue": "Fluids Engineering Division Summer Meeting 58059, V01BT11A020, 2017",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:0CzhzZyukY4C"
-    },
-    {
       "year": 2016,
-      "title": "Rotor broadband noise due to surface roughness during ice accretion",
-      "authors": "B Cheng, Y Han, KS Brentner, J Palacios, PJ Morris",
-      "venue": "54th AIAA Aerospace Sciences Meeting, 1270, 2016",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:mB3voiENLucC"
-    },
-    {
-      "year": 2016,
-      "title": "A validation effort of a dual, impinging-jet flow",
-      "authors": "JD Valenti, M Fronzeo, MP Kinzel, LM Myers",
-      "venue": "46th AIAA Fluid Dynamics Conference, 4254, 2016",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:e5wmG9Sq2KIC"
-    },
-    {
-      "year": 2016,
-      "title": "An investigation of compressible gas jets submerged into water",
-      "authors": "M Fronzeo, MP Kinzel",
-      "venue": "46th AIAA Fluid Dynamics Conference, 4253, 2016",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:RHpTSmoSYBkC"
-    },
-    {
-      "year": 2016,
-      "title": "Computational Skin Friction and Heat Transfer Modeling of Ice Roughened Airfoils",
-      "authors": "D Hanson, MP Kinzel, Y Han, J Palacios",
-      "venue": "46th AIAA Fluid Dynamics Conference, 4110, 2016",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:4JMBOYKVnBMC"
-    },
-    {
-      "year": 2016,
-      "title": "A validation effort of dual jet flow simulations",
-      "authors": "JD Valenti, M Fronzeo, MP Kinzel, LM Myers",
-      "venue": "46th AIAA Fluid Dynamics Conference, 2016, 2016",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:F1b5ZUV5XREC"
-    },
-    {
-      "year": 2016,
-      "title": "Application of the discrete element roughness method to ice accretion geometries",
-      "authors": "DR Hanson, MP Kinzel",
-      "venue": "46th AIAA Fluid Dynamics Conference, 2016, 2016",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:eGYfIraVYiQC"
+      "title": "Bulk cavitation extent modeling: An energy-based approach",
+      "authors": "JJ Esplin, BJ Kim, MP Kinzel, RL Culver",
+      "venue": "The Journal of the Acoustical Society of America 140 (4), 2016",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:2tRrZ1ZAMYUC"
     },
     {
       "year": 2016,
@@ -1447,10 +1419,52 @@
     },
     {
       "year": 2016,
-      "title": "Bulk cavitation extent modeling: An energy-based approach",
-      "authors": "JJ Esplin, BJ Kim, MP Kinzel, RL Culver",
-      "venue": "The Journal of the Acoustical Society of America 140 (4), 2016",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:2tRrZ1ZAMYUC"
+      "title": "Application of the discrete element roughness method to ice accretion geometries",
+      "authors": "DR Hanson, MP Kinzel",
+      "venue": "46th AIAA Fluid Dynamics Conference, 2016, 2016",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:eGYfIraVYiQC"
+    },
+    {
+      "year": 2016,
+      "title": "A validation effort of dual jet flow simulations",
+      "authors": "JD Valenti, M Fronzeo, MP Kinzel, LM Myers",
+      "venue": "46th AIAA Fluid Dynamics Conference, 2016, 2016",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:F1b5ZUV5XREC"
+    },
+    {
+      "year": 2016,
+      "title": "Computational Skin Friction and Heat Transfer Modeling of Ice Roughened Airfoils",
+      "authors": "D Hanson, MP Kinzel, Y Han, J Palacios",
+      "venue": "46th AIAA Fluid Dynamics Conference, 4110, 2016",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:4JMBOYKVnBMC"
+    },
+    {
+      "year": 2016,
+      "title": "An investigation of compressible gas jets submerged into water",
+      "authors": "M Fronzeo, MP Kinzel",
+      "venue": "46th AIAA Fluid Dynamics Conference, 4253, 2016",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:RHpTSmoSYBkC"
+    },
+    {
+      "year": 2016,
+      "title": "A validation effort of a dual, impinging-jet flow",
+      "authors": "JD Valenti, M Fronzeo, MP Kinzel, LM Myers",
+      "venue": "46th AIAA Fluid Dynamics Conference, 4254, 2016",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:e5wmG9Sq2KIC"
+    },
+    {
+      "year": 2016,
+      "title": "Rotor broadband noise due to surface roughness during ice accretion",
+      "authors": "B Cheng, Y Han, KS Brentner, J Palacios, PJ Morris",
+      "venue": "54th AIAA Aerospace Sciences Meeting, 1270, 2016",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:mB3voiENLucC"
+    },
+    {
+      "year": 2015,
+      "title": "Assessment of cooling tower discharge recirculation and dispersion using CFD techniques",
+      "authors": "S Pal, LJ Peltier, A Rizhakov, MP Kinzel, MH Elbert, KJ Knight, S Rao",
+      "venue": "ASME Power Conference 56604, V001T12A002, 2015",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:ZeXyd9-uunAC"
     },
     {
       "year": 2015,
@@ -1468,13 +1482,6 @@
     },
     {
       "year": 2015,
-      "title": "Assessment of cooling tower discharge recirculation and dispersion using CFD techniques",
-      "authors": "S Pal, LJ Peltier, A Rizhakov, MP Kinzel, MH Elbert, KJ Knight, S Rao",
-      "venue": "ASME Power Conference 56604, V001T12A002, 2015",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:ZeXyd9-uunAC"
-    },
-    {
-      "year": 2015,
       "title": "A Numerical Investigation of a Gaseous Jet Interacting with a Supercavity",
       "authors": "M Kinzel, M Moeny, M Krane, I Kirschner",
       "venue": "APS Division of Fluid Dynamics Meeting Abstracts, L36. 001, 2015",
@@ -1486,13 +1493,6 @@
       "authors": "JJ Esplin, MP Kinzel, B Kim, RL Culver",
       "venue": "APS Division of Fluid Dynamics Meeting Abstracts, L6. 011, 2015",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:L8Ckcad2t8MC"
-    },
-    {
-      "year": 2015,
-      "title": "Jet-supercavity interaction: Insights from physics analysis",
-      "authors": "IN Kirschner, MJ Moeny, MH Krane, MP Kinzel",
-      "venue": "Journal of Physics: Conference Series 656 (1), 012156, 2015",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:-f6ydRqryjwC"
     },
     {
       "year": 2015,
@@ -1530,6 +1530,13 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:IWHjjKOFINEC"
     },
     {
+      "year": 2015,
+      "title": "Jet-supercavity interaction: Insights from physics analysis",
+      "authors": "IN Kirschner, MJ Moeny, MH Krane, MP Kinzel",
+      "venue": "Journal of Physics: Conference Series 656 (1), 012156, 2015",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:-f6ydRqryjwC"
+    },
+    {
       "year": 2014,
       "title": "A singularity handling approach for the Rayleigh-Plesset equation",
       "authors": "A Balu, M Kinzel, S Miller",
@@ -1559,6 +1566,13 @@
     },
     {
       "year": 2013,
+      "title": "Numerical simulation of airfoil ice accretion phenomena",
+      "authors": "J Kim, CM Brown, RE Kreeger, LN Sankar, RF Kun, JW Lindau, MP Kinzel",
+      "venue": "2nd Asian-Australian Rotorcraft Forum and 4th International Basic Research …, 2013",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:U4n9YNQMCAIC"
+    },
+    {
+      "year": 2013,
       "title": "Advancement and application of multi-phase CFD modeling to high speed supercavitating flows",
       "authors": "JW Lindau, MP Kinzel",
       "venue": "",
@@ -1572,11 +1586,11 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:SIv7DqKytYAC"
     },
     {
-      "year": 2013,
-      "title": "Numerical simulation of airfoil ice accretion phenomena",
-      "authors": "J Kim, M Brown, E Kreeger, LN Sankar, RF Kunz",
-      "venue": "The 4th International Basic Research Conference of Rotorcraft Technology, China, 2013",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:U4n9YNQMCAIC"
+      "year": 2012,
+      "title": "Considerations in coupling LES of the atmosphere to CFD around wind turbines",
+      "authors": "G Vijayakumar, J Brasseur, A Lavely, M Kinzel, E Paterson, M Churchfield, ...",
+      "venue": "50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and …, 2012",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:ULOm3_A8WrAC"
     },
     {
       "year": 2012,
@@ -1587,10 +1601,10 @@
     },
     {
       "year": 2012,
-      "title": "Considerations in coupling LES of the atmosphere to CFD around wind turbines",
-      "authors": "G Vijayakumar, J Brasseur, A Lavely, M Kinzel, E Paterson, M Churchfield, ...",
-      "venue": "50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and …, 2012",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:ULOm3_A8WrAC"
+      "title": "A CFD-Based Integral Pump-Down Model for Computing Solids Transfer From a Mixing Vessel",
+      "authors": "MP Kinzel, LJ Peltier, B Rosendall, A Rizhakov, KJ Knight",
+      "venue": "International Conference on Nuclear Engineering 44984, 607-617, 2012",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:4TOpqqG69KYC"
     },
     {
       "year": 2012,
@@ -1598,13 +1612,6 @@
       "authors": "S Pal, A Rizhakov, M Kinzel, KJ Knight",
       "venue": "ASME International Mechanical Engineering Congress and Exposition 45233, 189-208, 2012",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:_kc_bZDykSQC"
-    },
-    {
-      "year": 2012,
-      "title": "A CFD-Based Integral Pump-Down Model for Computing Solids Transfer From a Mixing Vessel",
-      "authors": "MP Kinzel, LJ Peltier, B Rosendall, A Rizhakov, KJ Knight",
-      "venue": "International Conference on Nuclear Engineering 44984, 607-617, 2012",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:4TOpqqG69KYC"
     },
     {
       "year": 2011,
@@ -1631,7 +1638,7 @@
       "year": 2011,
       "title": "Experimental measurement of unsteady lift and pitching moments for MiTEs on a S903 airfoil",
       "authors": "J Palacios, A Overmeyer, E Smith, M Maughmer, M Kinzel, J Szefi",
-      "venue": "Forum 67-Virginia Beach, Virginia 2011, 2011",
+      "venue": "Forum 67-Virginia Beach, Virginia 2011 67, 2011",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:kVjdVfd2voEC"
     },
     {
@@ -1713,24 +1720,10 @@
     },
     {
       "year": 2009,
-      "title": "A level-set approach for large scale cavitation",
-      "authors": "MP Kinzel, JW Lindau, RF Kunz",
-      "venue": "2009 DoD High Performance Computing Modernization Program Users Group …, 2009",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:MXK_kJrjxJIC"
-    },
-    {
-      "year": 2009,
-      "title": "A level-set approach for compressible, multiphase fluid flows with mass transfer",
+      "title": "Air entrainment mechanisms from artificial supercavities: insight based on numerical simulations",
       "authors": "M Kinzel, J Lindau, R Kunz",
-      "venue": "19th AIAA Computational Fluid Dynamics, 4152, 2009",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:_FxGoFyzp5QC"
-    },
-    {
-      "year": 2009,
-      "title": "Computation of cavitating flow through marine propulsors",
-      "authors": "JW Lindau, WL Moody, MP Kinzel, JJ Dreyer, RF Kunz, EG Paterson",
-      "venue": "Proceedings of the 1st International Symposium on Marine Propulsors, 2009",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:9yKSN-GCB0IC"
+      "venue": "",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:W7OEmFMy1HYC"
     },
     {
       "year": 2009,
@@ -1741,6 +1734,13 @@
     },
     {
       "year": 2009,
+      "title": "Computation of cavitating flow through marine propulsors",
+      "authors": "JW Lindau, WL Moody, MP Kinzel, JJ Dreyer, RF Kunz, EG Paterson",
+      "venue": "Proceedings of the 1st International Symposium on Marine Propulsors, 2009",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:9yKSN-GCB0IC"
+    },
+    {
+      "year": 2009,
       "title": "An examination of thermal modeling affects to the numerical prediction of large-scale cavitating fluid flow",
       "authors": "M Kinzel, J Lindau, R Kunz",
       "venue": "",
@@ -1748,10 +1748,24 @@
     },
     {
       "year": 2009,
-      "title": "Air entrainment mechanisms from artificial supercavities: insight based on numerical simulations",
+      "title": "A level-set approach for large scale cavitation",
+      "authors": "MP Kinzel, JW Lindau, RF Kunz",
+      "venue": "2009 DoD High Performance Computing Modernization Program Users Group …, 2009",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:MXK_kJrjxJIC"
+    },
+    {
+      "year": 2009,
+      "title": "Space-time Loadings on Wind Turbine Blades driven by Atmospheric Boundary Layer Turbulence: Coupling LES and DES",
+      "authors": "JG Brasseur, MP Kinzel",
+      "venue": "NSF Award 9 (933647), 33647, 2009",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:JWITY9-sCbMC"
+    },
+    {
+      "year": 2009,
+      "title": "A level-set approach for compressible, multiphase fluid flows with mass transfer",
       "authors": "M Kinzel, J Lindau, R Kunz",
-      "venue": "",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:W7OEmFMy1HYC"
+      "venue": "19th AIAA Computational Fluid Dynamics, 4152, 2009",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LI9BgQkAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=LI9BgQkAAAAJ:_FxGoFyzp5QC"
     },
     {
       "year": 2008,
